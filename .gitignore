@@ -1,0 +1,32 @@
+# Arterial in-house adaptation — never commit these
+# Model weights (CC BY-NC, large, controlled storage only)
+*.pth
+*.pt
+*.ckpt
+models/
+arterial/models/
+*.tar.gz
+
+# Build / runtime artefacts
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+runs/
+*.nii
+*.nii.gz
+*.vtk
+*.stl
+*.dcm
+
+# Hospital-instance / PHI-adjacent — belongs in hospital QMS, never here
+hospital-filled/
+authority-pack/
+case-data/
+*PHI*
+*patient*
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
