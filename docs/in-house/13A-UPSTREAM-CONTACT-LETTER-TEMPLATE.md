@@ -18,3 +18,6 @@ We confirm the following understanding and ask you to correct us where wrong:
 Please confirm or correct, and tell us your preferred channel for safety-relevant defect reports.
 
 Authorised for `[HOSPITAL]`: `[name, role, date]`
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

@@ -60,3 +60,6 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | validrig | The DearAuditor validation-harness engine. A pack describes one intended use. The engine stays untouched. |
 | HEOR | Health Economics and Outcomes Research. Here only a small workflow-value outline (Doc 14), not a reimbursement dossier. |
 | HTA | Health Technology Assessment. Mentioned only to bound what Doc 14 is not. |
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

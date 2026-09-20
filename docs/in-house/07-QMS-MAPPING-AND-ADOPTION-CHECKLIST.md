@@ -86,3 +86,6 @@ Numbers above are invented. Your rows must point at your system, your versions, 
 | Clinical engineering / IT | Yes | Deployment, monitoring, rollback, backup |
 | QA/regulatory | Yes | Docs 01-12, authority interface |
 | Management | Awareness | Doc 00 + (g)(h) duties |
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

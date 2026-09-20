@@ -51,3 +51,6 @@ Upstream modules `access_prediction`, `feature_extraction` quantitative outputs,
 - Clinical lead: `[HOSPITAL: name/date/signature]`
 - QA lead: `[HOSPITAL: name/date/signature]`
 - Linked risk plan: Doc 08; linked validation: Doc 10.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

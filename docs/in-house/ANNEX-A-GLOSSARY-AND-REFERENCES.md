@@ -29,3 +29,6 @@
 
 - Upstream Arterial: `v2.1`, Python 3.11, torch 2.6.0/cu124 (Linux GPU), VMTK via conda-forge, model record `22694951`.
 - This package: `v0.1.0-DRAFT`, `2026-09-20`. Hospital to re-verify upstream state at fork time, upstream moves, the frozen fork does not.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

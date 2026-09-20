@@ -2,7 +2,7 @@
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible, use technical/clinical grounds only.
+> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible, use technical/clinical grounds only. Read Doc 01 section 1A first: the adaptation from research code to a narrow clinical purpose is part of this justification, not background.
 
 ## 1. Target patient group (precise)
 
@@ -50,3 +50,6 @@ Signers: `[clinical lead + regulatory/QA + date]`.
 - Re-check cadence: `[HOSPITAL: annual minimum]` + trigger on new EUDAMED entries, vendor launches, guideline changes.
 - If an equivalent appears: freeze new clinical use, assess transition to the CE device, record in CAPA/change (Doc 11). Continued in-house use requires fresh justification.
 - Doc 14 (HEOR outline) may supply workflow/performance context but must never substitute for this technical/clinical justification.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

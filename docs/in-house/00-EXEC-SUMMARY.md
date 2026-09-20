@@ -53,3 +53,6 @@ If the hospital cannot staff a device owner, a clinical lead, and QA oversight f
 - Next review date: `[HOSPITAL: ...]`
 
 If GO: proceed in document order 01 → 07 before any engineering beyond a non-clinical feasibility spike on de-identified data.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

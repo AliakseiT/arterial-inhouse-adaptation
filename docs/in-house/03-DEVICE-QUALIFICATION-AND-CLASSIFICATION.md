@@ -44,3 +44,6 @@ Preliminary position (Doc 09): Class B minimum, evaluate Class C. Final class af
 
 - `[HOSPITAL: regulatory reviewer, date]`
 - Linked: Doc 02 (purpose), Doc 04 (equivalence search scoped by this classification), Doc 08 (hazards assume IIa-equiv harm model).
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

@@ -36,3 +36,6 @@
 | GSPR | Why not fully met | Justification / mitigation | Authority-communication status |
 |---|---|---|---|
 | `[HOSPITAL: none expected at GO]` | | | |
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

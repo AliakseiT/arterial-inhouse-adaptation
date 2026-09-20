@@ -57,3 +57,6 @@ New upstream cherry-pick, weight change, dependency/CUDA change, new scanner/pro
 ## 6. Validation report and release linkage
 
 Report location: `[HOSPITAL: QMS ref]`; includes acceptance verdict per criterion, subgroup analysis, failure gallery, usability summative, benefit-risk input to Docs 05/08, and explicit release recommendation (approve / approve-with-limitations / reject). No report → no release → no declaration.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

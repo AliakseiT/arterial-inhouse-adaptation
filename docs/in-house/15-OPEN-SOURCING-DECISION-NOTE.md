@@ -23,3 +23,6 @@ Upstream code/weights beyond fair-use excerpts (NC redistribution bar), hospital
 - [ ] Publication version frozen and recorded; issues channel designated (public issues ≠ incident reporting, Doc 11 route stays internal).
 
 Without all five: do not publish. A private repo with good hygiene is the compliant steady state.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

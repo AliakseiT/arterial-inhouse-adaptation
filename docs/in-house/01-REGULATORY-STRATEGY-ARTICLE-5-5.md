@@ -7,7 +7,19 @@
 
 ## 1. Legal theory in one paragraph
 
-With the exception of the relevant Annex I GSPRs, the MDR does not apply to a device manufactured and used **only within the same EU health institution**, on a **non-industrial scale**, meeting **all** Art 5(5)(a)-(h) conditions. Upstream Arterial is not a device placed on the market; the hospital's **frozen, renamed fork** (`[HOSPITAL: in-house device identifier, e.g. HOSP-ART-VIZ-1.0]`) is the candidate in-house device. Software use counts as "use within" when the clinical act occurs inside the legal entity, including remote viewing by its staff on its systems, provided nothing is made available to another legal entity (MDCG 2023-1 §3.2.2, §3.4).
+With the exception of the relevant Annex I GSPRs (General Safety and Performance Requirements), the MDR (Medical Device Regulation) does not apply to a device manufactured and used only within the same EU health institution, on a non-industrial scale, meeting all Art 5(5)(a)-(h) conditions. Upstream Arterial is not a device placed on the market; the hospital's frozen, renamed fork (`[HOSPITAL: in-house device identifier, e.g. HOSP-ART-VIZ-1.0]`) is the candidate in-house device. Software use counts as "use within" when the clinical act occurs inside the legal entity, including remote viewing by its staff on its systems, provided nothing is made available to another legal entity (MDCG 2023-1 §3.2.2, §3.4).
+
+## 1A. Adaptation as manufacture, the extra defense line
+
+You see it correctly. The hospital does not take open-source code into a product. It manufactures a distinct device by adapting research code to a different intended purpose, and that adaptation is itself part of the Article 5(5) case. Three limbs, each filed as evidence.
+
+First, upstream purpose versus in-house purpose. Upstream Arterial is a research framework with a broad, unvalidated claim set: segmentation, centerlines, labelling, tortuosity features, access prediction. The in-house device claims one narrow thing: visualisation support with mandatory overread (Doc 02). Different purpose means different device. Upstream is therefore not an equivalent device for Doc 04 purposes, and no one can argue the hospital simply relabelled research software.
+
+Second, the adaptation record is manufacturing evidence. The fork log shows the manufacturing steps: pinning, hardening the DICOM (Digital Imaging and Communications in Medicine) intake, adding Quality Control gates and fail-stop behaviour, adding provenance logging, hiding predictive outputs, locking the deployment. Each change links to a requirement, a risk control, and a test (Docs 06, 08, 09). An authority reading the (f) file sees manufacture happening, not copying.
+
+Third, local validation closes the loop. Upstream metrics describe other data. Hospital validation (Doc 10) characterises the adapted build on local scanners and protocols. That is the performance data (f) demands and the reason (c) holds: the need is met at appropriate performance only after hospital-specific adaptation, which no off-the-shelf device underwent for this site.
+
+Limits, stated plainly. Adaptation does not excuse any condition. It strengthens (c), (f), and (g) only if the record is real: dated fork diffs, reviewed changes, validation on the frozen build. A thin wrapper with no local evidence adds nothing and hurts credibility.
 
 ## 2. Condition-by-condition map
 
@@ -69,3 +81,6 @@ Uncovering any hidden output for clinical display is a new intended purpose. It 
 - `[HOSPITAL: language requirements for clinician-facing information]`
 - `[HOSPITAL: incident-reporting route for in-house devices]`
 - Reviewed with: `[HOSPITAL: regulatory function sign-off, date]`
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

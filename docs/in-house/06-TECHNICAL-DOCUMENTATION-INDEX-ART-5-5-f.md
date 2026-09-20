@@ -64,3 +64,6 @@ Purpose, target users, mandatory overread statement, input requirements, step-by
 - Pack location: `[HOSPITAL: QMS path]`
 - Owner: `[HOSPITAL: name/role]`
 - Last drill date/result: `[HOSPITAL: ...]` (target: complete pack retrievable ≤ `[HOSPITAL: e.g. 10 working days]`).
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

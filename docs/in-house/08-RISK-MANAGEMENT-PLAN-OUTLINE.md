@@ -42,3 +42,6 @@ H10 note: do not claim "not for time-critical use" while deploying in stroke pla
 ## 5. Production/post-production information loop
 
 Feeds Doc 11: discordance log, QC-failure log, complaint/incident review, periodic risk-review demos. New hazards → update file → assess re-validation → update declaration if GSPR picture changes.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

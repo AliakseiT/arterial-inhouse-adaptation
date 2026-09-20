@@ -33,3 +33,6 @@ Contact the Arterial research team (via upstream GitHub issues/contact) to cover
 - No public repo/weights mirror, no multi-hospital sharing, no vendor hand-off, no commercial service built on the fork, each breaks Art 5(5)(a) and/or the NC licences simultaneously.
 - No removal of licence/notice files to "clean" the repo. No re-licensing of upstream code under MIT/Apache by the hospital.
 - Procurement of GPU/cloud services does not transfer device responsibility; DPAs and processor terms must keep processing inside the (a)-boundary per counsel.
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

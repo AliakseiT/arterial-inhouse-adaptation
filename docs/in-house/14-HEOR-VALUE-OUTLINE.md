@@ -40,3 +40,6 @@ value/
 ## 5. Deliverable and review
 
 - Deliverable: 2-4 page value note + engine run archive, reviewed by `[HOSPITAL: clinician + QA + finance]`, filed alongside Doc 04 as **context only**. Every page carries: "Draft, requires review by qualified professionals. Not regulatory, clinical, or reimbursement advice."
+
+---
+> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).

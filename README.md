@@ -1,66 +1,73 @@
-# Arterial In-House Clinical Adaptation Package
+# Arterial in-house clinical adaptation package
 
-> **Status:** DRAFT decision-support package, not a device file, not legal advice.
-> **Regulatory basis:** EU MDR Article 5(5) health-institution exemption, per MDCG 2023-1.
-> **Intended reader:** hospital QA/regulatory, clinical engineering, stroke neurology/interventional neuroradiology, IT/security, and hospital management.
-> **Assumption:** adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it, it maps into it.
-> **First-time reader:** start with `docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md`. Every abbreviation is spelled out on first use in each document.
+> Status: DRAFT decision-support package, not a device file, not legal advice.
+> Regulatory basis: EU MDR (Medical Device Regulation) Article 5(5) health-institution exemption, per MDCG 2023-1 (Medical Device Coordination Group guidance, January 2023).
+> Intended reader: hospital QA/regulatory, clinical engineering, stroke neurology/interventional neuroradiology, IT/security, and hospital management.
+> Assumption: adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it, it maps into it.
+> First-time reader: start with [terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md). Every abbreviation is spelled out on first use in each document.
 
 ## What this is
 
-Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0, Creative Commons Attribution NonCommercial) is a **research framework** for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
+Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0, Creative Commons Attribution NonCommercial) is a research framework for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
 
-This package enables a hospital to decide, under its own QMS, whether and how to **fork, freeze, harden, and validate** that research code into a narrowly-scoped **in-house device** for internal clinical use, and to document every Article 5(5)(a)–(h) condition if it proceeds.
+This package helps a hospital decide, under its own QMS, whether and how to fork, freeze, harden, and validate that research code into a narrowly scoped in-house device for internal clinical use, and to document every Article 5(5)(a)-(h) condition if it proceeds.
 
-Narrow in-house purpose adopted here (see `docs/in-house/02`):
+Narrow in-house purpose adopted here (see [Doc 02](docs/in-house/02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md)):
 
-> **In-house CTA vascular visualisation aid:** 3D vessel segmentation + centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support, not drive, thrombectomy planning discussion. Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
+> In-house CTA vascular visualisation aid: 3D vessel segmentation plus centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support, not drive, thrombectomy (mechanical clot removal) planning discussion. Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
 
-Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are **explicitly out of scope** for the initial in-house claim. Adding them later is a design change requiring re-validation and re-justification.
+Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are out of scope for the initial claim. Adding them later is a design change requiring re-validation and re-justification.
+
+## How to read this package
+
+This README is the index. Start here, leave to read a document, come back here when in doubt. Every document ends with a return link to this section.
+
+Path 1, decide in 30 minutes. Read in this order:
+
+1. [Terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md), 5 minutes. The shared vocabulary.
+2. [Doc 00, executive summary](docs/in-house/00-EXEC-SUMMARY.md), 10 minutes. Go or no-go.
+3. [Doc 01, regulatory strategy](docs/in-house/01-REGULATORY-STRATEGY-ARTICLE-5-5.md), 10 minutes. The eight conditions plus the hidden-feature path.
+4. [Doc 02, intended purpose](docs/in-house/02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md), 5 minutes. What the device is and is not.
+
+Path 2, build in order. Only after Path 1 ends in GO:
+
+5. [Doc 03, qualification and classification](docs/in-house/03-DEVICE-QUALIFICATION-AND-CLASSIFICATION.md) then [Doc 04, non-equivalence](docs/in-house/04-NON-EQUIVALENCE-JUSTIFICATION.md). No build before Doc 04 is signed.
+6. [Doc 05, GSPR checklist](docs/in-house/05-GSPR-APPLICABILITY-CHECKLIST.md) (General Safety and Performance Requirements), [Doc 06, technical index](docs/in-house/06-TECHNICAL-DOCUMENTATION-INDEX-ART-5-5-f.md), [Doc 07, QMS mapping and checklist](docs/in-house/07-QMS-MAPPING-AND-ADOPTION-CHECKLIST.md).
+7. [Doc 08, risk outline](docs/in-house/08-RISK-MANAGEMENT-PLAN-OUTLINE.md), [Doc 09, lifecycle outline](docs/in-house/09-SOFTWARE-LIFECYCLE-PLAN-OUTLINE.md), [Doc 10, validation plus validrig pack](docs/in-house/10-VALIDATION-PLAN-AND-VALIDRIG-PACK-SKELETON.md).
+8. [Doc 11, monitoring](docs/in-house/11-CLINICAL-USE-MONITORING-AND-CAPA.md), [Doc 12, public declaration](docs/in-house/12-PUBLIC-DECLARATION-TEMPLATE-ART-5-5-e.md).
+9. [Doc 13, licensing](docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md) with [upstream letter](docs/in-house/13A-UPSTREAM-CONTACT-LETTER-TEMPLATE.md), [Doc 14, value outline](docs/in-house/14-HEOR-VALUE-OUTLINE.md) (HEOR, Health Economics and Outcomes Research), [Doc 15, open-sourcing note](docs/in-house/15-OPEN-SOURCING-DECISION-NOTE.md), [Annex A](docs/in-house/ANNEX-A-GLOSSARY-AND-REFERENCES.md).
+
+If in doubt, return here:
+
+| Doubt | Read |
+|---|---|
+| Can we use Article 5(5) at all | [Doc 01](docs/in-house/01-REGULATORY-STRATEGY-ARTICLE-5-5.md), conditions (a)-(h) plus national check |
+| What exactly are we claiming | [Doc 02](docs/in-house/02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md), purpose plus firewall |
+| Why this class and safety class | [Doc 03](docs/in-house/03-DEVICE-QUALIFICATION-AND-CLASSIFICATION.md), IIa-equivalent plus B-evaluate-C explainer |
+| Why no equivalent device exists | [Doc 04](docs/in-house/04-NON-EQUIVALENCE-JUSTIFICATION.md), search method plus determination |
+| What safety rules still apply | [Doc 05](docs/in-house/05-GSPR-APPLICABILITY-CHECKLIST.md), requirement by requirement |
+| Where the evidence lives | [Doc 06](docs/in-house/06-TECHNICAL-DOCUMENTATION-INDEX-ART-5-5-f.md), facility, process, design, performance |
+| How this fits our QMS, what to do next | [Doc 07](docs/in-house/07-QMS-MAPPING-AND-ADOPTION-CHECKLIST.md), mapping plus checklist |
+| What can go wrong | [Doc 08](docs/in-house/08-RISK-MANAGEMENT-PLAN-OUTLINE.md), hazards H1-H10 |
+| How we build and release safely | [Doc 09](docs/in-house/09-SOFTWARE-LIFECYCLE-PLAN-OUTLINE.md), SOUP (Software Of Unknown Provenance), SBOM (Software Bill Of Materials), hiding proof |
+| How we prove it works locally | [Doc 10](docs/in-house/10-VALIDATION-PLAN-AND-VALIDRIG-PACK-SKELETON.md), retrospective plus shadow phase |
+| How we watch it in use | [Doc 11](docs/in-house/11-CLINICAL-USE-MONITORING-AND-CAPA.md), relaxed cadence plus regulatory minimum |
+| What we publish | [Doc 12](docs/in-house/12-PUBLIC-DECLARATION-TEMPLATE-ART-5-5-e.md), MDCG Annex A based |
+| Can we legally use and share this | [Doc 13](docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md), licence split plus repo rules |
+| What it is worth | [Doc 14](docs/in-house/14-HEOR-VALUE-OUTLINE.md), workflow value only, never price |
+| Can we open-source later | [Doc 15](docs/in-house/15-OPEN-SOURCING-DECISION-NOTE.md), gated, private is the steady state |
+| What an abbreviation means | [Terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md) |
 
 ## Repository intent
 
-Per owner decision: this workspace is expected to become a **private repository** under `AliakseiT`, e.g. `arterial-inhouse-adaptation`. It must stay private until:
+This is now the private repository `AliakseiT/arterial-inhouse-adaptation`. It stays private until licence clearance with VHIR (Vall d'Hebron Research Institute) and UB (Universitat de Barcelona) for any hospital deployment and any future open-sourcing, plus removal of hospital-identifying, patient, or infrastructure content.
 
-1. Licence clearance with VHIR/UB (upstream rights holders) for any hospital deployment and for any future open-sourcing of hospital-added documentation/code, and
-2. Removal/redaction of any hospital-identifying, patient, or internal-infrastructure content.
+See [Doc 13](docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md) and [Doc 15](docs/in-house/15-OPEN-SOURCING-DECISION-NOTE.md). Do not push upstream code verbatim to a public repo without upstream consent, PolyForm NC governs redistribution and derivative publication.
 
-See `docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md` and `15-OPEN-SOURCING-DECISION-NOTE.md`. Do not push upstream code verbatim to a public repo without upstream consent, PolyForm NC governs redistribution and derivative publication.
+Related tooling, not vendored here:
 
-## Package map
-
-| # | Document | Answers |
-|---|---|---|
-| 00 | `docs/in-house/00-EXEC-SUMMARY.md` | Go / no-go decision in 10 minutes |
-| 01 | `01-REGULATORY-STRATEGY-ARTICLE-5-5.md` | Art 5(5)(a)–(h) + MDCG 2023-1 condition map |
-| 02 | `02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md` | Narrow purpose, users, out-of-scope firewall |
-| 03 | `03-DEVICE-QUALIFICATION-AND-CLASSIFICATION.md` | MDSW qualification, Rule 11 reasoning, why class still matters |
-| 04 | `04-NON-EQUIVALENCE-JUSTIFICATION.md` | Art 5(5)(c) method + EUDAMED search + HEOR link |
-| 05 | `05-GSPR-APPLICABILITY-CHECKLIST.md` | Annex I GSPR-by-GSPR applicability and evidence pointer |
-| 06 | `06-TECHNICAL-DOCUMENTATION-INDEX-ART-5-5-f.md` | Art 5(5)(f) facility/process/design/performance index |
-| 07 | `07-QMS-MAPPING-AND-ADOPTION-CHECKLIST.md` | Generic-QMS mapping + hospital adoption checklist |
-| 08 | `08-RISK-MANAGEMENT-PLAN-OUTLINE.md` | ISO 14971 plan outline, top hazards |
-| 09 | `09-SOFTWARE-LIFECYCLE-PLAN-OUTLINE.md` | IEC 62304/82304 tailoring, SOUP/SBOM, fork governance |
-| 10 | `10-VALIDATION-PLAN-AND-VALIDRIG-PACK-SKELETON.md` | Local clinical validation + validrig pack skeleton |
-| 11 | `11-CLINICAL-USE-MONITORING-AND-CAPA.md` | Art 5(5)(g)(h): use review, corrective action, authority interface |
-| 12 | `12-PUBLIC-DECLARATION-TEMPLATE-ART-5-5-e.md` | MDCG Annex A–based public declaration |
-| 13 | `13-LICENSING-AND-SOURCE-GOVERNANCE.md` | PolyForm NC / CC BY-NC / Apache-2.0 split, private-repo rules |
-| 14 | `14-HEOR-VALUE-OUTLINE.md` | heor-skills–based value outline supporting (c) without price arguments |
-| 15 | `15-OPEN-SOURCING-DECISION-NOTE.md` | What can later be open-sourced and under what consent |
-| A | `ANNEX-A-GLOSSARY-AND-REFERENCES.md` | Terms, sources, version pins |
-
-Related upstream tooling (not vendored here):
-
-- QMS content model: `AliakseiT/dearauditor-qms-baseline`, SOP/WI/record templates referenced in Doc 07 (not copied; mapped).
-- Validation harness engine: `AliakseiT/validrig`, Doc 10 defines an `arterial-visualisation` pack against its engine.
-- Value dossiers: `AliakseiT/heor-skills`, Doc 14 defines the narrow HEOR outline.
-
-## How to use this package
-
-1. Hospital management + QA read Docs 00 + 01 and confirm Art 5(5) is even plausible (same legal entity, non-industrial scale, no transfer).
-2. Clinical lead owns Doc 02, if the narrow purpose does not match local need, stop and re-scope before any engineering.
-3. Regulatory function owns Docs 03 + 04, non-equivalence (Doc 04) must precede any build work.
-4. Engineering + QA own Docs 05–10 under the hospital QMS (Doc 07 checklist).
-5. Only after frozen build + validation + risk acceptance: sign Doc 12 declaration, open Doc 11 monitoring.
+- QMS content model: `AliakseiT/dearauditor-qms-baseline`, SOP/WI/record templates referenced in Doc 07, mapped not copied.
+- Validation harness engine: `AliakseiT/validrig`, Doc 10 defines an arterial-visualisation pack against its engine.
+- Value methods: `AliakseiT/heor-skills`, Doc 14 defines the narrow value outline.
 
 No code in this package is a medical device. No document here asserts compliance, all `[HOSPITAL: ...]` brackets must be completed and approved inside the hospital QMS.
