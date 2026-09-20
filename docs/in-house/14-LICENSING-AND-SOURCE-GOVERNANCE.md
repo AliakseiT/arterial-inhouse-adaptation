@@ -1,4 +1,4 @@
-# 13, Licensing and Source Governance
+# 14, Licensing and Source Governance
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
@@ -11,13 +11,13 @@
 | Arterial **source code** (`FLOWCAT-CV/arterial`) | PolyForm Noncommercial 1.0.0 (`LICENSE`, with `Required Notice` preservation) | Internal non-commercial hospital use including in-house clinical deployment is within the permitted non-commercial scope **provided** the hospital qualifies (public-health organisation use is expressly permitted regardless of funding). Redistribution, public forks, hosted offering, or commercial use require a separate licence from VHIR/UB. |
 | Arterial **trained weights** (Zenodo `10.5281/zenodo.22694951`) | CC BY-NC 4.0 (non-commercial, attribution) | Same posture as code: internal clinical use allowed; sharing outside the legal entity, commercial use, or public redistribution requires rights-holder consent. |
 | TotalSegmentator `craniofacial_structures` sub-model | Apache-2.0 (per `THIRD_PARTY_NOTICES.md` + in-model `LICENSE`/`NOTICE`) | Permits commercial use **of that sub-model alone**; keep `LICENSE`+`NOTICE` with every copy. Does not lift NC terms on surrounding Arterial code/weights. |
-| Dependencies (nnU-Net/MONAI Apache-2.0, VMTK BSD, PyG MIT, + transitive) | As labelled | Comply independently; preserve attributions; SBOM records obligations (Doc 09 §3). |
+| Dependencies (nnU-Net/MONAI Apache-2.0, VMTK BSD, PyG MIT, + transitive) | As labelled | Comply independently; preserve attributions; SBOM records obligations (Doc 10 §3). |
 
 PolyForm NC § "Changes and New Works" governs hospital modifications: internal use is fine; **publishing** the modified work (including a public GitHub repo) is distribution-like and needs upstream consent. When in doubt, ask before pushing.
 
 ## 2. Repository rules for this private adaptation repo
 
-1. **Private from creation.** `AliakseiT/arterial-inhouse-adaptation` (or hospital-owned private repo), no public visibility until Doc 15 clearance.
+1. Private from creation. `AliakseiT/arterial-inhouse-adaptation` (or hospital-owned private repo). No public visibility without prior written upstream consent plus hospital legal and QA sign-off, recorded in the hospital QMS (see section 3).
 2. **Upstream hygiene.** Pin upstream commit SHA; never force-push upstream history; keep `LICENSE`, `Required Notice`, `THIRD_PARTY_NOTICES.md`, model `LICENSE`/`NOTICE` intact in every copy (build artefacts, weight mirrors, air-gap media).
 3. **Attribution.** Preserve VHIR/UB copyright notices + cite Canals 2023, Wasserthal 2023, Beyer 2026, Isensee 2021 (upstream README §Citation) in internal docs and any publication.
 4. **No weight leakage.** Weights live in controlled storage (`ARTERIAL_MODELS_DIR` equivalent), never in git; access-logged; hashed at build/load.
@@ -26,7 +26,7 @@ PolyForm NC § "Changes and New Works" governs hospital modifications: internal 
 
 ## 3. Required upstream discussion (before clinical use and before any open-sourcing)
 
-Contact the Arterial research team (via upstream GitHub issues/contact) to cover: (a) awareness of intended in-house clinical adaptation, (b) confirmation of NC-scope interpretation for the specific hospital deployment, (c) defect-reporting channel (upstream issues are public, never include PHI), (d) back-porting safety fixes without pulling unvalidated features, (e) terms for publishing any hospital-added validation/tooling. Record outcome at `[HOSPITAL: QMS ref]`; Doc 15 gates publication on written consent.
+Contact the Arterial research team (via upstream GitHub issues/contact) to cover: (a) awareness of intended in-house clinical adaptation, (b) confirmation of NC-scope interpretation for the specific hospital deployment, (c) defect-reporting channel (upstream issues are public, never include PHI), (d) back-porting safety fixes without pulling unvalidated features, (e) terms for publishing any hospital-added validation/tooling. Record outcome in the hospital QMS. Any publication of hospital-added material requires prior written upstream consent, recorded alongside hospital legal and QA sign-off.
 
 ## 4. Red lines
 

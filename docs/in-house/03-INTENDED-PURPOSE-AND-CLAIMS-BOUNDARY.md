@@ -1,4 +1,4 @@
-# 02, Intended Purpose and Claims Boundary (Narrow Scope)
+# 03, Intended Purpose and Claims Boundary (Narrow Scope)
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
@@ -32,7 +32,7 @@ Each claim is stated in plain words first, with the technical term following in 
 
 ## 4. Where the device stops (out-of-scope firewall)
 
-The list above is everything the device does. Everything below stays a physician task, and showing any of it to clinicians voids this scope and triggers the wider-use path in Doc 01 section 3:
+The list above is everything the device does. Everything below stays a physician task, and showing any of it to clinicians voids this scope and triggers the wider-use path in Doc 02 section 3:
 
 - Access-difficulty probability, attention maps, tortuosity scores as thresholds, or any "difficult/easy" flag.
 - Intracranial-only mode outputs, landmark-based measurements, or automated reports beyond visualisation.
@@ -40,11 +40,11 @@ The list above is everything the device does. Everything below stays a physician
 - Use outside `[HOSPITAL]` entity, outside adult suspected-AIS planning discussion, or on non-CTA modalities.
 - Paediatric, non-stroke, or non-head-and-neck use.
 
-Upstream modules `access_prediction`, `feature_extraction` quantitative outputs, and `vessel_labelling` names are hidden from the clinical interface by configuration in this scope. The code may remain in the fork for engineering evaluation, but clinicians cannot reach it. Each release proves this with a UI crawl plus a flag-state test, recorded in Doc 06. Uncovering any of it for clinical display follows the wider-use path in Doc 01 section 3: revised purpose, fresh justification, re-validation, new declaration.
+Upstream modules `access_prediction`, `feature_extraction` quantitative outputs, and `vessel_labelling` names are hidden from the clinical interface by configuration in this scope. The code may remain in the fork for engineering evaluation, but clinicians cannot reach it. Each release proves this with a UI crawl plus a flag-state test, recorded in Doc 07. Uncovering any of it for clinical display follows the wider-use path in Doc 02 section 3: revised purpose, fresh justification, re-validation, new declaration.
 
 ## 5. Users and environment
 
-- Intended users: `[HOSPITAL: e.g. board-certified neuroradiologists / interventionalists / stroke neurologists]` trained per Doc 07 training plan.
+- Intended users: `[HOSPITAL: e.g. board-certified neuroradiologists / interventionalists / stroke neurologists]` trained per Doc 08 training plan.
 - Non-users: ED triage nurses, patients, external referrers (no direct output).
 - Use environment: `[HOSPITAL: PACS/viewer integration description, workstation type, network zone]`; inference on `[HOSPITAL: GPU server, air-gapped/VLAN details]`.
 - Input: head-and-neck CTA meeting `[HOSPITAL: acquisition spec, kVp, slice thickness, contrast phase, matrix]`; non-conforming inputs rejected with message.
@@ -52,15 +52,15 @@ Upstream modules `access_prediction`, `feature_extraction` quantitative outputs,
 
 ## 6. System boundary
 
-- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Docs 05/06/09).
+- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Docs 06/06/09).
 - NOT part of device: PACS, hospital network, upstream repo, training workstations, research notebooks.
-- Interfaces treated as SOUP/external: nnU-Net, MONAI, VMTK, PyTorch Geometric, TotalSegmentator mandible model (Apache-2.0), CUDA/drivers, listed in SBOM (Doc 09).
+- Interfaces treated as SOUP/external: nnU-Net, MONAI, VMTK, PyTorch Geometric, TotalSegmentator mandible model (Apache-2.0), CUDA/drivers, listed in SBOM (Doc 10).
 
 ## 7. Approval
 
 - Clinical lead: `[HOSPITAL: name/date/signature]`
 - QA lead: `[HOSPITAL: name/date/signature]`
-- Linked risk plan: Doc 08; linked validation: Doc 10.
+- Linked risk plan: Doc 09; linked validation: Doc 11.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

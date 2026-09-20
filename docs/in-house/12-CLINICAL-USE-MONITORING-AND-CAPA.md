@@ -1,4 +1,4 @@
-# 11, Clinical-Use Monitoring, Corrective Action, Authority Interface
+# 12, Clinical-Use Monitoring, Corrective Action, Authority Interface
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
@@ -22,7 +22,7 @@ Relaxed minimum for pathfinder adoption:
 |---|---|---|---|---|
 | Case-log triage | Per case cluster, at least monthly, zero-case months logged as such | Quality Control (QC) failures, discordances, complaints | Device owner | Triage to CAPA/change or close |
 | Clinical-use review | Twice yearly until case volume exceeds `[HOSPITAL: e.g. 100 cases]`, then quarterly | Discordance rate, stratum drift, latency, training compliance | Clinical lead + QA | Review minute; risk-file update decision |
-| Non-equivalence re-check | `12 months` maximum + ad-hoc on new market entrants | European Database on Medical Devices (EUDAMED)/market scan (Doc 04) | Regulatory | Re-affirmation or transition plan |
+| Non-equivalence re-check | `12 months` maximum + ad-hoc on new market entrants | European Database on Medical Devices (EUDAMED)/market scan (Doc 05) | Regulatory | Re-affirmation or transition plan |
 | Management review input | per existing hospital QMS cycle, no extra cycle | All above + audit findings | Management | Resource/continue/retire decision |
 
 ## 4. Discordance and incident handling
@@ -33,11 +33,11 @@ Relaxed minimum for pathfinder adoption:
 
 ## 5. Authority pack (Art 5(5)(d) readiness)
 
-Maintained at `[HOSPITAL: QMS path]`: Docs 01-12 current versions, frozen source access procedure, build reproducibility statement, validation report, risk file, deployment list, case-volume summary, declaration copy, non-equivalence evidence. Owner `[HOSPITAL]`; retrieval drill `[HOSPITAL: frequency, last result]`. Cooperate with inspections; respect Member-State notification duties `[HOSPITAL: citation or N/A]`.
+Maintained at `[HOSPITAL: QMS path]`: Docs 03-13 current versions, frozen source access procedure, build reproducibility statement, validation report, risk file, deployment list, case-volume summary, declaration copy, non-equivalence evidence. Owner `[HOSPITAL]`; retrieval drill `[HOSPITAL: frequency, last result]`. Cooperate with inspections; respect Member-State notification duties `[HOSPITAL: citation or N/A]`.
 
 ## 6. Change control (all changes via QMS)
 
-Upstream monitoring `[HOSPITAL: owner + frequency]`; every hospital change assessed for purpose/safety/performance impact → re-validation scoping (Doc 10 §5) → updated Docs 02/05/06/08/12 as affected → new release tag → re-training if workflow changed. Unassessed auto-updates are forbidden.
+Upstream monitoring `[HOSPITAL: owner + frequency]`; every hospital change assessed for purpose/safety/performance impact → re-validation scoping (Doc 11 §5) → updated Docs 03/05/06/08/12 as affected → new release tag → re-training if workflow changed. Unassessed auto-updates are forbidden.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

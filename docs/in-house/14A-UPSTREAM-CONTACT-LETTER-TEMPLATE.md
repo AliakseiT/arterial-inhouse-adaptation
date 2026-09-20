@@ -1,6 +1,6 @@
 # Upstream contact letter template (hospital legal review required)
 
-> File with Doc 13. Send before clinical use and before any publication. Keep the reply in the hospital QMS. Never include patient data, internal network detail, or authority correspondence.
+> File with Doc 14. Send before clinical use and before any publication. Keep the reply in the hospital QMS. Never include patient data, internal network detail, or authority correspondence.
 
 Subject: In-house clinical adaptation of Arterial, licence confirmation request
 

@@ -20,17 +20,20 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 |---|---|---|
 | MDR | Medical Device Regulation (EU) 2017/745 | The EU law. Article 5(5) is the narrow exemption this package relies on. |
 | IVDR | In Vitro Diagnostic Regulation (EU) 2017/746 | The sister law for lab tests. Referenced only to avoid confusion. Not used here. |
-| Art 5(5)(a)-(h) | Article 5, paragraph 5, conditions (a) through (h) | Eight conditions that must all hold. Fail one, lose the exemption. Doc 01 maps each. |
-| GSPR | General Safety and Performance Requirements (MDR Annex I) | The safety and performance rules that still apply even under the exemption. Doc 05 checks each one. |
+| Art 5(5)(a)-(h) | Article 5, paragraph 5, conditions (a) through (h) | Eight conditions that must all hold. Fail one, lose the exemption. Doc 02 maps each. |
+| GSPR | General Safety and Performance Requirements (MDR Annex I) | The safety and performance rules that still apply even under the exemption. Doc 06 checks each one. |
 | MDCG 2023-1 | Medical Device Coordination Group guidance, January 2023 | The EU guidance explaining how authorities read Article 5(5). Not law, but auditors follow it. |
-| MDSW | Medical Device Software | Software that counts as a device. This package assumes the fork qualifies (Doc 03). |
-| EUDAMED | European Database on Medical Devices | The EU device database. Searched in Doc 04 to prove no equivalent device exists. |
+| MDSW | Medical Device Software | Software that counts as a device. This package assumes the fork qualifies (Doc 04). |
+| EUDAMED | European Database on Medical Devices | The EU device database. Searched in Doc 05 to prove no equivalent device exists. |
 | IFU | Instructions For Use | The clinician instructions. Here called IFU-equivalent because the format is adapted for in-house use. |
 | UDI | Unique Device Identification | The standard device labelling system. No CE-UDI under the exemption, but internal identification is still required for traceability. |
 | QMS | Quality Management System | The hospital system for controlling design, build, deployment, and monitoring. Assumed to exist. Never replaced by this package. |
-| CAPA | Corrective and Preventive Action | The process for fixing causes, not just symptoms. Linked to clinical-use review (Doc 11). |
+| CAPA | Corrective and Preventive Action | The process for fixing causes, not just symptoms. Linked to clinical-use review (Doc 12). |
 | PMS | Post-Market Surveillance | Systematic collection of use experience. Under the exemption this appears as clinical-use review per Art 5(5)(h), not full PMS. |
-| SSP | Summary of Safety and (clinical) Performance | Public summaries for higher-class devices in EUDAMED. Used as a Doc 04 source where available. |
+| SSP | Summary of Safety and (clinical) Performance | Public summaries for higher-class devices in EUDAMED. Used as a Doc 05 source where available. |
+| In-house device | No short form | A device manufactured and used only within the same EU health institution, meeting all Art 5(5) conditions (MDCG 2023-1 section 3.1). |
+| Health institution | No short form | An organisation whose primary purpose is the care or treatment of patients or the promotion of public health (MDR Art 2(36)). |
+| Non-industrial scale | No short form | Production limited to own-patient need. No commercial-scale manufacturing (Art 5(5) last subparagraph, MDCG section 3.9). |
 
 ## Engineering and AI terms
 
@@ -46,7 +49,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | PHI | Protected Health Information | Patient-identifiable data. Never enters this repo. Stays in the hospital record. |
 | DPIA | Data Protection Impact Assessment | The GDPR analysis for processing scan data. Filed in the hospital QMS. |
 | RBAC | Role-Based Access Control | Permissions by role, so only trained users see device output. |
-| CVE | Common Vulnerabilities and Exposures | Public software vulnerability entries. Checked per build (Doc 09). |
+| CVE | Common Vulnerabilities and Exposures | Public software vulnerability entries. Checked per build (Doc 10). |
 
 ## Project-specific terms
 
@@ -56,10 +59,26 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | Fork | The hospital-owned copy of upstream code, frozen at one commit plus hospital changes. The fork, not upstream, is the candidate device. |
 | Frozen build | Source commit plus pinned dependencies plus hashed weights plus config, released as one versioned unit. Only frozen builds may reach clinical use. |
 | Overread | The mandatory independent clinician review of the source CTA. Device output is never standalone. Tested under time pressure in validation. |
-| Shadow phase | Prospective validation where the device runs in parallel with care but does not influence decisions. Doc 10 defines it. |
+| Shadow phase | Prospective validation where the device runs in parallel with care but does not influence decisions. Doc 11 defines it. |
 | validrig | The DearAuditor validation-harness engine. A pack describes one intended use. The engine stays untouched. |
-| HEOR | Health Economics and Outcomes Research. Here only a small workflow-value outline (Doc 14), not a reimbursement dossier. |
-| HTA | Health Technology Assessment. Mentioned only to bound what Doc 14 is not. |
+| HEOR | Health Economics and Outcomes Research. Here only the viability analysis (Doc 15), not a reimbursement dossier. |
+| HTA | Health Technology Assessment. Mentioned only to bound what Doc 15 is not. |
+
+## Pinned references (verify currency at adoption)
+
+- MDR (EU) 2017/745, Art 2(1), 2(36), 5(5), 10(9), Annex I, Annex VIII Rule 11, Annex XIII (custom-made, contrast only).
+- MDCG 2023-1 (Jan 2023): health-institution exemption guidance with the Annex A declaration model.
+- MDCG 2019-11: Medical Device Software qualification and classification.
+- ISO 14971 (risk), IEC 62304 plus IEC 82304-1 (software lifecycle and health software), IEC 62366-1 (usability), ISO 13485 and 15189 (Quality Management System context), ISO/IEC 27001 plus 42001 (security and AI management).
+- Upstream: `FLOWCAT-CV/arterial` v2.1 (PolyForm NC 1.0.0), Zenodo `10.5281/zenodo.22694951` (CC BY-NC 4.0, Creative Commons Attribution NonCommercial), TotalSegmentator Apache-2.0 sub-model; Canals 2023, Wasserthal 2023, Beyer 2026, Isensee 2021.
+- Hospital-agnostic Quality Management System model: `AliakseiT/dearauditor-qms-baseline` (SOP and work-instruction record templates, mapped, not vendored).
+- Validation engine: `AliakseiT/validrig` (`rig`, pack-based, on-prem, append-only runs).
+- Value methods: `AliakseiT/heor-skills` (deterministic `@heor/engine`, drafts-not-submissions).
+
+## Version pins used while drafting
+
+- Upstream Arterial: `v2.1`, Python 3.11, torch 2.6.0 with CUDA 12.4 (Linux GPU), VMTK via conda-forge, model record `22694951`.
+- This package: `v0.2.0-DRAFT`, `2026-09-20`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

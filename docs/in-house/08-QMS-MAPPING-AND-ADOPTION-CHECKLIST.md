@@ -1,4 +1,4 @@
-# 07, QMS Mapping and Hospital Adoption Checklist
+# 08, QMS Mapping and Hospital Adoption Checklist
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
@@ -33,36 +33,36 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 ## 2. Hospital adoption checklist (complete in order; record evidence ref + date + signer per line)
 
 ### Phase A, Decide (no engineering beyond de-identified feasibility)
-- [ ] A1. National law check (Doc 01 §4) signed. `[ref/date/signer]`
+- [ ] A1. National law check (Doc 02 §4) signed. `[ref/date/signer]`
 - [ ] A2. Same-legal-entity + non-industrial-scale confirmation signed. `[…]`
-- [ ] A3. Doc 02 narrow purpose approved by clinical lead + QA. `[…]`
-- [ ] A4. Doc 03 qualification/classification-equivalent recorded. `[…]`
-- [ ] A5. Doc 04 non-equivalence search + determination signed **before build**. `[…]`
-- [ ] A6. Licence clearance to fork/deploy internally (Doc 13) + private-repo created. `[…]`
+- [ ] A3. Doc 03 narrow purpose approved by clinical lead + QA. `[…]`
+- [ ] A4. Doc 04 qualification/classification-equivalent recorded. `[…]`
+- [ ] A5. Doc 05 non-equivalence search + determination signed **before build**. `[…]`
+- [ ] A6. Licence clearance to fork/deploy internally (Doc 14) + private-repo created. `[…]`
 - [ ] A7. Device owner, clinical lead, QA oversight named; resourcing for lifetime committed. `[…]`
-- [ ] A8. GO decision (Doc 00 §5) recorded. `[…]`
+- [ ] A8. GO decision (Doc 01 §5) recorded. `[…]`
 
 ### Phase B, Build under QMS
-- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Docs 06/09). `[…]`
+- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Docs 07/09). `[…]`
 - [ ] B2. SBOM + SOUP risk + CVE review filed. `[…]`
-- [ ] B3. Access-prediction/quantitative outputs disabled + verified (Doc 02 §4 proof test). `[…]`
+- [ ] B3. Access-prediction/quantitative outputs disabled + verified (Doc 03 §4 proof test). `[…]`
 - [ ] B4. DICOM→NIfTI intake, QC gates, fail-stop, provenance logging implemented. `[…]`
-- [ ] B5. Risk file drafted (Doc 08); architecture + requirements traced. `[…]`
+- [ ] B5. Risk file drafted (Doc 09); architecture + requirements traced. `[…]`
 - [ ] B6. IFU-equivalent + on-screen warnings drafted in required language(s). `[…]`
 - [ ] B7. Verification (incl. build reproducibility) complete. `[…]`
 
 ### Phase C, Validate, approve, declare
-- [ ] C1. Local validation per Doc 10 executed; acceptance criteria met; report approved. `[…]`
+- [ ] C1. Local validation per Doc 11 executed; acceptance criteria met; report approved. `[…]`
 - [ ] C2. Usability summative (overread compliance under time pressure) passed. `[…]`
-- [ ] C3. Residual benefit-risk accepted (Docs 05/08). `[…]`
+- [ ] C3. Residual benefit-risk accepted (Docs 06/08). `[…]`
 - [ ] C4. Release decision + installation qualification signed. `[…]`
 - [ ] C5. Training completed and recorded (role matrix). `[…]`
-- [ ] C6. Public declaration published (Doc 12) + version linked to frozen build. `[…]`
-- [ ] C7. Monitoring plan live (Doc 11): case log, discordance review, CAPA route. `[…]`
+- [ ] C6. Public declaration published (Doc 13) + version linked to frozen build. `[…]`
+- [ ] C7. Monitoring plan live (Doc 12): case log, discordance review, CAPA route. `[…]`
 
 ### Phase D, Operate
-- [ ] D1. Use review held per Doc 11 relaxed cadence; annual non-equivalence re-check scheduled. `[…]`
-- [ ] D2. Authority-pack drill passed (Doc 06 §8). `[…]`
+- [ ] D1. Use review held per Doc 12 relaxed cadence; annual non-equivalence re-check scheduled. `[…]`
+- [ ] D2. Authority-pack drill passed (Doc 07 §8). `[…]`
 - [ ] D3. Any change → change control + re-validation assessment before deployment. `[…]`
 - [ ] D4. Retirement/decommissioning plan on file. `[…]`
 
@@ -84,8 +84,8 @@ Numbers above are invented. Your rows must point at your system, your versions, 
 | Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting |
 | Radiographers / PACS operators | Yes (handling) | Input spec, rejection handling, provenance check |
 | Clinical engineering / IT | Yes | Deployment, monitoring, rollback, backup |
-| QA/regulatory | Yes | Docs 01-12, authority interface |
-| Management | Awareness | Doc 00 + (g)(h) duties |
+| QA/regulatory | Yes | Docs 03-13, authority interface |
+| Management | Awareness | Doc 01 + (g)(h) duties |
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

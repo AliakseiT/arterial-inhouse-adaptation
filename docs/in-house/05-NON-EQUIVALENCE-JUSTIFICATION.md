@@ -1,12 +1,12 @@
-# 04, Non-Equivalence Justification, Art 5(5)(c)
+# 05, Non-Equivalence Justification, Art 5(5)(c)
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible, use technical/clinical grounds only. Read Doc 01 section 1A first: the adaptation from research code to a narrow clinical purpose is part of this justification, not background.
+> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible, use technical/clinical grounds only. Read Doc 02 section 1A first: the adaptation from research code to a narrow clinical purpose is part of this justification, not background.
 
 ## 1. Target patient group (precise)
 
-`[HOSPITAL: e.g. adults presenting to HOSPITAL ED with suspected anterior-circulation large-vessel occlusion, undergoing head-and-neck CTA per local stroke protocol, annual volume ≈ N]`. Link to Doc 02. Vague groups ("stroke patients") are rejected, define presentation, anatomy (extracranial pathway), and workflow step.
+`[HOSPITAL: e.g. adults presenting to HOSPITAL ED with suspected anterior-circulation large-vessel occlusion, undergoing head-and-neck CTA per local stroke protocol, annual volume ≈ N]`. Link to Doc 03. Vague groups ("stroke patients") are rejected, define presentation, anatomy (extracranial pathway), and workflow step.
 
 ## 2. Specific need claimed
 
@@ -29,7 +29,7 @@ File IFUs, datasheets, correspondence, and search exports with the justification
 For each closest CE candidate, complete:
 
 - Candidate: `[name, manufacturer, EUDAMED ID, version]`
-- Intended purpose delta: `[why it does not cover the Doc 02 purpose]`
+- Intended purpose delta: `[why it does not cover the Doc 03 purpose]`
 - Performance delta: `[e.g. failure modes on local-type data, lack of QC/provenance signalling, deployment incompatibility with air-gap requirement, each with evidence or clearly-labelled gap analysis]`
 - Conclusion: `[not equivalent at appropriate performance / equivalent → STOP and procure instead]`
 
@@ -41,15 +41,15 @@ Template row (copy per candidate):
 
 ## 5. Determination statement (sign before manufacture)
 
-> On `[date]`, `[HOSPITAL legal entity]` determined that no equivalent CE-marked device available on the market meets the §1 target-group need at appropriate performance for the Doc 02 purpose, on the evidence filed at `[HOSPITAL: QMS ref]`. Next scheduled re-check: `[date, ≤12 months]`. New CE entrants trigger ad-hoc re-check per Doc 11.
+> On `[date]`, `[HOSPITAL legal entity]` determined that no equivalent CE-marked device available on the market meets the §1 target-group need at appropriate performance for the Doc 03 purpose, on the evidence filed at `[HOSPITAL: QMS ref]`. Next scheduled re-check: `[date, ≤12 months]`. New CE entrants trigger ad-hoc re-check per Doc 12.
 
 Signers: `[clinical lead + regulatory/QA + date]`.
 
 ## 6. Maintenance
 
 - Re-check cadence: `[HOSPITAL: annual minimum]` + trigger on new EUDAMED entries, vendor launches, guideline changes.
-- If an equivalent appears: freeze new clinical use, assess transition to the CE device, record in CAPA/change (Doc 11). Continued in-house use requires fresh justification.
-- Doc 14 (HEOR outline) may supply workflow/performance context but must never substitute for this technical/clinical justification.
+- If an equivalent appears: freeze new clinical use, assess transition to the CE device, record in CAPA/change (Doc 12). Continued in-house use requires fresh justification.
+- Doc 15 (HEOR outline) may supply workflow/performance context but must never substitute for this technical/clinical justification.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).
