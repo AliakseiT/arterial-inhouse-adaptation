@@ -1,17 +1,19 @@
-# 09 — Software Lifecycle Plan Outline (IEC 62304 / IEC 82304-1, tailored)
+# 09, Software Lifecycle Plan Outline (IEC 62304 / IEC 82304-1, tailored)
 
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
 > Owner: engineering + QA. Assumed safety class: **B minimum, evaluate C** (Doc 03 §4). If C is confirmed, add segregation, detailed design, and enhanced integration testing beyond this outline.
 
 ## 1. Lifecycle model
 
-V-model with gated releases (plan → requirements → architecture → implementation → integration → system test → release → deployment), mapped to hospital change control (SOP-009-equiv). No clinical deployment from `main`; only from signed release tags (`hosp-vX.Y.Z`). Upstream `main` is never pulled directly into clinical builds — changes arrive via reviewed cherry-picks.
+V-model with gated releases (plan → requirements → architecture → implementation → integration → system test → release → deployment), mapped to hospital change control (SOP-009-equiv). No clinical deployment from `main`; only from signed release tags (`hosp-vX.Y.Z`). Upstream `main` is never pulled directly into clinical builds, changes arrive via reviewed cherry-picks.
 
 ## 2. Configuration and fork governance
 
 - Fork: `[HOSPITAL: private repo URL]` branched from upstream commit `[SHA]`; hospital diff reviewed line-by-line; `THIRD_PARTY_NOTICES.md` + `LICENSE` preserved.
 - Versioning: `hosp-vX.Y.Z` (X = purpose-affecting, Y = pipeline-affecting, Z = config/docs-only); build fingerprint recorded (Doc 06 §1).
 - Reproducibility: locked container (`[HOSPITAL: Dockerfile digest]`), pinned `requirements` + conda VMTK pin, weight SHA256 checks at build and at load.
-- Out-of-scope disablement: build flag `[HOSPITAL: e.g. HOSP_ENABLE_ACCESS_PREDICTION=OFF]` + dead-code removal preferred over UI-hiding; proof test each release (assert module absent/unreachable + UI crawl).
+- Out-of-scope hiding: build flag `[HOSPITAL: e.g. HOSP_ENABLE_ACCESS_PREDICTION=OFF]` plus UI removal for hidden modules; proof test each release (flag-state assertion + interface crawl confirming clinical users cannot reach hidden outputs). Removal is allowed but not required. What matters is the proof, filed in Doc 06, and the wider-use path in Doc 01 section 3 for uncovering.
 
 ## 3. SOUP and SBOM
 

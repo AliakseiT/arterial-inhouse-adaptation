@@ -1,5 +1,7 @@
-# 00 — Executive Summary and Go/No-Go
+# 00, Executive Summary and Go/No-Go
 
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
 > Read time: ~10 minutes. Owner: hospital management + QA/regulatory jointly.
 > Outcome: a recorded GO / CONDITIONAL / NO-GO for pursuing an Arterial-derived in-house device.
 
@@ -16,11 +18,11 @@ Adapt upstream Arterial v2.1 (research, non-commercial licence) into a **frozen,
 | (c) | Target-group need not met at appropriate performance by equivalent CE device | Doc 04 method + Doc 14 HEOR outline | EUDAMED/market search done, documented, periodically repeated |
 | (d) | Information to competent authority on request | Doc 11 §5 authority pack | Owner + 30-day retrieval commitment |
 | (e) | Public declaration (identity + GSPR statement) | Doc 12 template | Published on hospital website, kept current |
-| (f) | Documentation of facility/process/design/performance sufficient for authority review | Doc 06 index + Docs 08–10 | Frozen config + evidence actually exists |
+| (f) | Documentation of facility/process/design/performance sufficient for authority review | Doc 06 index + Docs 08-10 | Frozen config + evidence actually exists |
 | (g) | Manufacture per (f) documentation | Doc 11 §2 + Doc 09 release gates | Build-from-source reproducibility, change control |
 | (h) | Review of clinical-use experience + corrective action | Doc 11 monitoring plan | Case review cadence, complaint/CAPA linkage |
 
-Plus overarching: **non-industrial scale** (own-patient volume only, no batch production beyond need) and **Member-State law** (some states restrict in-house types — check `[HOSPITAL: Member State]` transposition first).
+Plus overarching: **non-industrial scale** (own-patient volume only, no batch production beyond need) and **Member-State law** (some states restrict in-house types, check `[HOSPITAL: Member State]` transposition first).
 
 Failure of any one condition collapses the exemption. Fallbacks: CE-marked device, custom-made route (not applicable to multi-patient software), investigational-device route, or research-only use with no clinical reliance.
 
@@ -32,12 +34,12 @@ Full Arterial (access prediction, tortuosity thresholds driving decisions) would
 - excludes the least-validated, highest-risk model (access prediction) from clinical display,
 - makes non-equivalence arguable on **workflow integration + local-population performance** rather than on novelty alone.
 
-Widening scope later = new intended purpose = repeat Docs 02–05, 08–10.
+Widening scope later = new intended purpose = repeat Docs 02-05, 08-10.
 
 ## 4. Cost and effort signals (order of magnitude, not a quote)
 
-- Regulatory/QA: 6–12 weeks part-time for Docs 02–07 + declaration, assuming QMS exists.
-- Engineering: freeze fork, SBOM, air-gapped packaging, DICOM/NIfTI pipeline hardening, UI read-only viewer integration, logging — typically larger than regulatory work.
+- Regulatory/QA: 6-12 weeks part-time for Docs 02-07 + declaration, assuming QMS exists.
+- Engineering: freeze fork, SBOM, air-gapped packaging, DICOM/NIfTI pipeline hardening, UI read-only viewer integration, logging, typically larger than regulatory work.
 - Validation: retrospective CTA set with ground-truth segmentations + prospective silent/shadow phase; validrig pack (Doc 10) structures this but does not replace radiologist overread studies.
 - Ongoing: per-case logging, quarterly use review, annual non-equivalence re-check, re-validation on any model/data/pipeline change.
 

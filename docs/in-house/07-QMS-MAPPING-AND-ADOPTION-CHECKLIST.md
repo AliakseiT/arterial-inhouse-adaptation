@@ -1,5 +1,7 @@
-# 07 — QMS Mapping and Hospital Adoption Checklist
+# 07, QMS Mapping and Hospital Adoption Checklist
 
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
 > Owner: QA. Principle: the hospital's QMS stays the system of record. This doc maps Art 5(5)/Annex I needs onto it and gives the adoption checklist. QMS-baseline SOP numbers below are a reference model (`AliakseiT/dearauditor-qms-baseline`); replace with `[HOSPITAL: SOP]` equivalents.
 
 ## 1. Element mapping (MDCG 2023-1 Table 1 style)
@@ -30,7 +32,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 
 ## 2. Hospital adoption checklist (complete in order; record evidence ref + date + signer per line)
 
-### Phase A — Decide (no engineering beyond de-identified feasibility)
+### Phase A, Decide (no engineering beyond de-identified feasibility)
 - [ ] A1. National law check (Doc 01 §4) signed. `[ref/date/signer]`
 - [ ] A2. Same-legal-entity + non-industrial-scale confirmation signed. `[…]`
 - [ ] A3. Doc 02 narrow purpose approved by clinical lead + QA. `[…]`
@@ -40,7 +42,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] A7. Device owner, clinical lead, QA oversight named; resourcing for lifetime committed. `[…]`
 - [ ] A8. GO decision (Doc 00 §5) recorded. `[…]`
 
-### Phase B — Build under QMS
+### Phase B, Build under QMS
 - [ ] B1. Upstream commit pinned; fork frozen; build env locked (Docs 06/09). `[…]`
 - [ ] B2. SBOM + SOUP risk + CVE review filed. `[…]`
 - [ ] B3. Access-prediction/quantitative outputs disabled + verified (Doc 02 §4 proof test). `[…]`
@@ -49,7 +51,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] B6. IFU-equivalent + on-screen warnings drafted in required language(s). `[…]`
 - [ ] B7. Verification (incl. build reproducibility) complete. `[…]`
 
-### Phase C — Validate, approve, declare
+### Phase C, Validate, approve, declare
 - [ ] C1. Local validation per Doc 10 executed; acceptance criteria met; report approved. `[…]`
 - [ ] C2. Usability summative (overread compliance under time pressure) passed. `[…]`
 - [ ] C3. Residual benefit-risk accepted (Docs 05/08). `[…]`
@@ -58,11 +60,22 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] C6. Public declaration published (Doc 12) + version linked to frozen build. `[…]`
 - [ ] C7. Monitoring plan live (Doc 11): case log, discordance review, CAPA route. `[…]`
 
-### Phase D — Operate
-- [ ] D1. Quarterly use review held; annual non-equivalence re-check scheduled. `[…]`
+### Phase D, Operate
+- [ ] D1. Use review held per Doc 11 relaxed cadence; annual non-equivalence re-check scheduled. `[…]`
 - [ ] D2. Authority-pack drill passed (Doc 06 §8). `[…]`
 - [ ] D3. Any change → change control + re-validation assessment before deployment. `[…]`
 - [ ] D4. Retirement/decommissioning plan on file. `[…]`
+
+## 4. Worked example (fictional, do not copy verbatim)
+
+Normative mapping above stays blank until the hospital completes it. The example below shows one fictional hospital filling two rows, only to show the shape of done.
+
+| Required element | Fictional hospital equivalent | Fictional evidence |
+|---|---|---|
+| Design control | SOP-DES-004 v3.2 | Change request CR-2026-118 with trace matrix |
+| Incident reporting | SOP-VIG-002 v1.4, national portal DE-BfArM | Reportability assessment RA-2026-007 |
+
+Numbers above are invented. Your rows must point at your system, your versions, your records. An auditor who finds copied SOP numbers finds a gap.
 
 ## 3. Training roles (minimum)
 
@@ -71,5 +84,5 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 | Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting |
 | Radiographers / PACS operators | Yes (handling) | Input spec, rejection handling, provenance check |
 | Clinical engineering / IT | Yes | Deployment, monitoring, rollback, backup |
-| QA/regulatory | Yes | Docs 01–12, authority interface |
+| QA/regulatory | Yes | Docs 01-12, authority interface |
 | Management | Awareness | Doc 00 + (g)(h) duties |

@@ -1,10 +1,12 @@
-# 10 — Local Clinical Validation Plan + validrig Pack Skeleton
+# 10, Local Clinical Validation Plan + validrig Pack Skeleton
 
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
 > Owner: clinical lead + QA + engineering. Principle: upstream metrics (papers, Zenodo) do not validate the hospital build on hospital data. Validation happens on **frozen hospital build + local CTA**, with pre-registered acceptance criteria. Engine: `AliakseiT/validrig` (`rig`), pack name `arterial-visualisation`.
 
 ## 1. Acceptance criteria (set before data is touched)
 
-| Dimension | Metric (example — hospital to approve) | Floor |
+| Dimension | Metric (example, hospital to approve) | Floor |
 |---|---|---|
 | Segmentation (local test set, ground truth) | Dice (vessel mask), 95HD | `[HOSPITAL: e.g. Dice ≥ 0.80 mean, ≥ 0.70 p5]` |
 | Centerline completeness | % clinically-relevant segments visualised without gap > `[X]` mm | `[HOSPITAL: ≥ 95%]` |
@@ -24,7 +26,7 @@ If any floor is missed: no clinical use; either improve (new release candidate) 
 
 ## 3. Silent / shadow phase (prospective, non-influencing)
 
-- `[HOSPITAL: N consecutive cases, duration]` run in parallel with standard care; output visible only to study team, **never** to treating team, or visible with explicit "validation — do not use" watermark per ethics approval `[HOSPITAL: ethics ref]`.
+- `[HOSPITAL: N consecutive cases, duration]` run in parallel with standard care; output visible only to study team, **never** to treating team, or visible with explicit "validation, do not use" watermark per ethics approval `[HOSPITAL: ethics ref]`.
 - Endpoints: technical success rate, QC-flag rate, discordance between device visualisation and final radiology read, time impact, incident count.
 - Stop rules: `[HOSPITAL: e.g. >X% technical failure, any silent wrong-output event, any safety signal → halt + CAPA]`.
 

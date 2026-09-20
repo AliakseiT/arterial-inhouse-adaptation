@@ -1,4 +1,4 @@
-# Abbreviations and terminology — read this first
+# Abbreviations and terminology, read this first
 
 This package is written for a mixed audience. Clinical, engineering, and regulatory readers meet here, and each group trips over the others' shorthand. Rule used across all docs: every abbreviation is spelled out on first use in each document, then abbreviated. This page is the shared reference. If a term below conflicts with your hospital usage, record the hospital term in your QMS and use it consistently.
 
@@ -20,7 +20,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 |---|---|---|
 | MDR | Medical Device Regulation (EU) 2017/745 | The EU law. Article 5(5) is the narrow exemption this package relies on. |
 | IVDR | In Vitro Diagnostic Regulation (EU) 2017/746 | The sister law for lab tests. Referenced only to avoid confusion. Not used here. |
-| Art 5(5)(a)–(h) | Article 5, paragraph 5, conditions (a) through (h) | Eight conditions that must all hold. Fail one, lose the exemption. Doc 01 maps each. |
+| Art 5(5)(a)-(h) | Article 5, paragraph 5, conditions (a) through (h) | Eight conditions that must all hold. Fail one, lose the exemption. Doc 01 maps each. |
 | GSPR | General Safety and Performance Requirements (MDR Annex I) | The safety and performance rules that still apply even under the exemption. Doc 05 checks each one. |
 | MDCG 2023-1 | Medical Device Coordination Group guidance, January 2023 | The EU guidance explaining how authorities read Article 5(5). Not law, but auditors follow it. |
 | MDSW | Medical Device Software | Software that counts as a device. This package assumes the fork qualifies (Doc 03). |

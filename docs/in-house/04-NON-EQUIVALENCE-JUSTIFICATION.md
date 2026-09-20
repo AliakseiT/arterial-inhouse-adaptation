@@ -1,14 +1,16 @@
-# 04 — Non-Equivalence Justification, Art 5(5)(c)
+# 04, Non-Equivalence Justification, Art 5(5)(c)
 
-> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible — use technical/clinical grounds only.
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
+> Owner: regulatory + clinical lead, before any build. This is the condition most authorities probe first. Economic arguments (price, licence cost) are inadmissible, use technical/clinical grounds only.
 
 ## 1. Target patient group (precise)
 
-`[HOSPITAL: e.g. adults presenting to HOSPITAL ED with suspected anterior-circulation large-vessel occlusion, undergoing head-and-neck CTA per local stroke protocol, annual volume ≈ N]`. Link to Doc 02. Vague groups ("stroke patients") are rejected — define presentation, anatomy (extracranial pathway), and workflow step.
+`[HOSPITAL: e.g. adults presenting to HOSPITAL ED with suspected anterior-circulation large-vessel occlusion, undergoing head-and-neck CTA per local stroke protocol, annual volume ≈ N]`. Link to Doc 02. Vague groups ("stroke patients") are rejected, define presentation, anatomy (extracranial pathway), and workflow step.
 
 ## 2. Specific need claimed
 
-The in-house device addresses `[HOSPITAL: e.g. integrated extracranial centerline visualisation inside the local planning-discussion workflow with provenance/QC signalling tuned to local scanners/protocols]`, which available CE devices do not provide at appropriate performance because `[HOSPITAL: complete — e.g. no CE viewer validated on local CTA acquisition mix produces equivalent centerline completeness on tortuous arches; or workflow requires on-prem air-gapped execution incompatible with available cloud devices; each limb needs evidence, not assertion]`.
+The in-house device addresses `[HOSPITAL: e.g. integrated extracranial centerline visualisation inside the local planning-discussion workflow with provenance/QC signalling tuned to local scanners/protocols]`, which available CE devices do not provide at appropriate performance because `[HOSPITAL: complete, e.g. no CE viewer validated on local CTA acquisition mix produces equivalent centerline completeness on tortuous arches; or workflow requires on-prem air-gapped execution incompatible with available cloud devices; each limb needs evidence, not assertion]`.
 
 ## 3. Search method (describe in QMS, execute, file evidence)
 
@@ -28,7 +30,7 @@ For each closest CE candidate, complete:
 
 - Candidate: `[name, manufacturer, EUDAMED ID, version]`
 - Intended purpose delta: `[why it does not cover the Doc 02 purpose]`
-- Performance delta: `[e.g. failure modes on local-type data, lack of QC/provenance signalling, deployment incompatibility with air-gap requirement — each with evidence or clearly-labelled gap analysis]`
+- Performance delta: `[e.g. failure modes on local-type data, lack of QC/provenance signalling, deployment incompatibility with air-gap requirement, each with evidence or clearly-labelled gap analysis]`
 - Conclusion: `[not equivalent at appropriate performance / equivalent → STOP and procure instead]`
 
 Template row (copy per candidate):

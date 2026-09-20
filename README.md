@@ -3,18 +3,18 @@
 > **Status:** DRAFT decision-support package, not a device file, not legal advice.
 > **Regulatory basis:** EU MDR Article 5(5) health-institution exemption, per MDCG 2023-1.
 > **Intended reader:** hospital QA/regulatory, clinical engineering, stroke neurology/interventional neuroradiology, IT/security, and hospital management.
-> **Assumption:** adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it — it maps into it.
+> **Assumption:** adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it, it maps into it.
 > **First-time reader:** start with `docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md`. Every abbreviation is spelled out on first use in each document.
 
 ## What this is
 
-Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0 — Creative Commons Attribution NonCommercial) is a **research framework** for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
+Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0, Creative Commons Attribution NonCommercial) is a **research framework** for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
 
-This package enables a hospital to decide, under its own QMS, whether and how to **fork, freeze, harden, and validate** that research code into a narrowly-scoped **in-house device** for internal clinical use — and to document every Article 5(5)(a)–(h) condition if it proceeds.
+This package enables a hospital to decide, under its own QMS, whether and how to **fork, freeze, harden, and validate** that research code into a narrowly-scoped **in-house device** for internal clinical use, and to document every Article 5(5)(a)–(h) condition if it proceeds.
 
 Narrow in-house purpose adopted here (see `docs/in-house/02`):
 
-> **In-house CTA vascular visualisation aid:** 3D vessel segmentation + centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support — not drive — thrombectomy planning discussion. Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
+> **In-house CTA vascular visualisation aid:** 3D vessel segmentation + centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support, not drive, thrombectomy planning discussion. Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
 
 Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are **explicitly out of scope** for the initial in-house claim. Adding them later is a design change requiring re-validation and re-justification.
 
@@ -25,7 +25,7 @@ Per owner decision: this workspace is expected to become a **private repository*
 1. Licence clearance with VHIR/UB (upstream rights holders) for any hospital deployment and for any future open-sourcing of hospital-added documentation/code, and
 2. Removal/redaction of any hospital-identifying, patient, or internal-infrastructure content.
 
-See `docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md` and `15-OPEN-SOURCING-DECISION-NOTE.md`. Do not push upstream code verbatim to a public repo without upstream consent — PolyForm NC governs redistribution and derivative publication.
+See `docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md` and `15-OPEN-SOURCING-DECISION-NOTE.md`. Do not push upstream code verbatim to a public repo without upstream consent, PolyForm NC governs redistribution and derivative publication.
 
 ## Package map
 
@@ -51,16 +51,16 @@ See `docs/in-house/13-LICENSING-AND-SOURCE-GOVERNANCE.md` and `15-OPEN-SOURCING-
 
 Related upstream tooling (not vendored here):
 
-- QMS content model: `AliakseiT/dearauditor-qms-baseline` — SOP/WI/record templates referenced in Doc 07 (not copied; mapped).
-- Validation harness engine: `AliakseiT/validrig` — Doc 10 defines an `arterial-visualisation` pack against its engine.
-- Value dossiers: `AliakseiT/heor-skills` — Doc 14 defines the narrow HEOR outline.
+- QMS content model: `AliakseiT/dearauditor-qms-baseline`, SOP/WI/record templates referenced in Doc 07 (not copied; mapped).
+- Validation harness engine: `AliakseiT/validrig`, Doc 10 defines an `arterial-visualisation` pack against its engine.
+- Value dossiers: `AliakseiT/heor-skills`, Doc 14 defines the narrow HEOR outline.
 
 ## How to use this package
 
 1. Hospital management + QA read Docs 00 + 01 and confirm Art 5(5) is even plausible (same legal entity, non-industrial scale, no transfer).
-2. Clinical lead owns Doc 02 — if the narrow purpose does not match local need, stop and re-scope before any engineering.
-3. Regulatory function owns Docs 03 + 04 — non-equivalence (Doc 04) must precede any build work.
+2. Clinical lead owns Doc 02, if the narrow purpose does not match local need, stop and re-scope before any engineering.
+3. Regulatory function owns Docs 03 + 04, non-equivalence (Doc 04) must precede any build work.
 4. Engineering + QA own Docs 05–10 under the hospital QMS (Doc 07 checklist).
 5. Only after frozen build + validation + risk acceptance: sign Doc 12 declaration, open Doc 11 monitoring.
 
-No code in this package is a medical device. No document here asserts compliance — all `[HOSPITAL: ...]` brackets must be completed and approved inside the hospital QMS.
+No code in this package is a medical device. No document here asserts compliance, all `[HOSPITAL: ...]` brackets must be completed and approved inside the hospital QMS.

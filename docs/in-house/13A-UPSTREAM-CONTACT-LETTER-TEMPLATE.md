@@ -1,0 +1,20 @@
+# Upstream contact letter template (hospital legal review required)
+
+> File with Doc 13. Send before clinical use and before any publication. Keep the reply in the hospital QMS. Never include patient data, internal network detail, or authority correspondence.
+
+Subject: In-house clinical adaptation of Arterial, licence confirmation request
+
+Dear Arterial team,
+
+`[HOSPITAL: legal entity name, address]` is evaluating an in-house adaptation of Arterial (`FLOWCAT-CV/arterial`, pinned commit `[SHA]`, version 2.1-derived) for internal use only, under the EU Medical Device Regulation Article 5(5) health-institution exemption. Scope is narrow: Computed Tomography Angiography vessel segmentation plus centerline visualisation to support thrombectomy planning discussion, with mandatory clinician overread. Predictive outputs remain hidden from clinicians.
+
+We confirm the following understanding and ask you to correct us where wrong:
+
+1. Our internal, non-commercial deployment inside a single health institution falls within the permitted non-commercial scope of the PolyForm Noncommercial 1.0.0 code licence and the CC BY-NC 4.0 (Creative Commons Attribution NonCommercial) weight licence.
+2. We keep all copyright notices, the Required Notice, THIRD_PARTY_NOTICES.md, and the TotalSegmentator Apache-2.0 LICENSE plus NOTICE with every copy.
+3. We will not redistribute code or weights, share the fork outside our legal entity, or publish hospital-added material without your prior written consent.
+4. We report defects without patient data through this channel: `[HOSPITAL: chosen channel]`. We pull only reviewed safety fixes, never unvalidated upstream changes, into clinical builds.
+
+Please confirm or correct, and tell us your preferred channel for safety-relevant defect reports.
+
+Authorised for `[HOSPITAL]`: `[name, role, date]`

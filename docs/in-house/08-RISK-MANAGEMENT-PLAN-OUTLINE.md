@@ -1,6 +1,8 @@
-# 08 — Risk Management Plan Outline (ISO 14971, tailored)
+# 08, Risk Management Plan Outline (ISO 14971, tailored)
 
-> Owner: QA + clinical + engineering. The risk file is the backbone of the GSPR claim — keep it live from first build through retirement.
+> First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
+>
+> Owner: QA + clinical + engineering. The risk file is the backbone of the GSPR claim, keep it live from first build through retirement.
 
 ## 1. Plan essentials
 
@@ -22,9 +24,9 @@
 | H7 | Input out-of-spec (paediatric, non-CTA, poor contrast) processed anyway | Misleading output | DICOM metadata gating + contrast/quality check + rejection message | Boundary tests |
 | H8 | Model/data drift (new scanner/protocol, silent upstream weight swap) | Performance decay | Frozen weights + hash check at load; protocol-stratified monitoring; change-triggered re-validation | Monitoring chart (Doc 11) |
 | H9 | Security/PHI breach (DICOM cache, logs, remote viewing) | Privacy harm, loss of trust | On-prem/air-gap, RBAC, encryption at rest/in transit, audit trail, DPIA | Security review + pentest proportionate |
-| H10 | Unavailable/slow inference delaying planning discussion | Workflow delay in time-critical stroke care | Explicit non-time-critical positioning is **not** credible in stroke — instead: latency budget, fallback to native-CTA-only workflow, downtime procedure | Latency + downtime drill |
+| H10 | Unavailable/slow inference delaying planning discussion | Workflow delay in time-critical stroke care | Explicit non-time-critical positioning is **not** credible in stroke, instead: latency budget, fallback to native-CTA-only workflow, downtime procedure | Latency + downtime drill |
 
-H10 note: do not claim "not for time-critical use" while deploying in stroke planning — the risk file must handle time pressure honestly.
+H10 note: do not claim "not for time-critical use" while deploying in stroke planning, the risk file must handle time pressure honestly.
 
 ## 3. SOUP/ML-specific risks
 
