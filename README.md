@@ -3,11 +3,12 @@
 > **Status:** DRAFT decision-support package, not a device file, not legal advice.
 > **Regulatory basis:** EU MDR Article 5(5) health-institution exemption, per MDCG 2023-1.
 > **Intended reader:** hospital QA/regulatory, clinical engineering, stroke neurology/interventional neuroradiology, IT/security, and hospital management.
-> **Assumption:** adopting hospital already operates an appropriate QMS. This package does not replace it — it maps into it.
+> **Assumption:** adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it — it maps into it.
+> **First-time reader:** start with `docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md`. Every abbreviation is spelled out on first use in each document.
 
 ## What this is
 
-Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0) is a **research framework** for automated vascular analysis from CTA: nnU-Net segmentation, VMTK centerlines, landmark detection, GNN vessel labelling, tortuosity features, access prediction.
+Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0 — Creative Commons Attribution NonCommercial) is a **research framework** for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
 
 This package enables a hospital to decide, under its own QMS, whether and how to **fork, freeze, harden, and validate** that research code into a narrowly-scoped **in-house device** for internal clinical use — and to document every Article 5(5)(a)–(h) condition if it proceeds.
 
