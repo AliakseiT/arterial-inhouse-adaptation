@@ -22,12 +22,12 @@ Access prediction, tortuosity scores as decision thresholds, and intracranial-on
 
 This README is the index. Start here, leave to read a document, come back here when in doubt. Every document ends with a return link to this section.
 
-Path 1, decide in 30 minutes. Read in this order:
+Path 1, decide in 30 minutes. Definition first, decision second, regulation third. Read in this order:
 
 1. [Terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md), 5 minutes. The shared vocabulary.
-2. [Doc 00, executive summary](docs/in-house/00-EXEC-SUMMARY.md), 10 minutes. Go or no-go.
-3. [Doc 01, regulatory strategy](docs/in-house/01-REGULATORY-STRATEGY-ARTICLE-5-5.md), 10 minutes. The eight conditions plus the hidden-feature path.
-4. [Doc 02, intended purpose](docs/in-house/02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md), 5 minutes. What the device is and is not.
+2. [Doc 02, intended purpose](docs/in-house/02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md), 5 minutes. What the device is, in plain words, before anyone justifies it.
+3. [Doc 00, executive summary](docs/in-house/00-EXEC-SUMMARY.md), 10 minutes. Go or no-go.
+4. [Doc 01, regulatory strategy](docs/in-house/01-REGULATORY-STRATEGY-ARTICLE-5-5.md), 10 minutes. The eight conditions plus the hidden-feature path.
 
 Path 2, build in order. Only after Path 1 ends in GO:
 

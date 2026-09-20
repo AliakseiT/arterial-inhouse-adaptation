@@ -11,6 +11,8 @@ With the exception of the relevant Annex I GSPRs (General Safety and Performance
 
 ## 1A. Adaptation as manufacture, the extra defense line
 
+First pass? Read Doc 02 before this section. It defines the device positively in one page. What follows assumes you know what the device is.
+
 You see it correctly. The hospital does not take open-source code into a product. It manufactures a distinct device by adapting research code to a different intended purpose, and that adaptation is itself part of the Article 5(5) case. Three limbs, each filed as evidence.
 
 First, upstream purpose versus in-house purpose. Upstream Arterial is a research framework with a broad, unvalidated claim set: segmentation, centerlines, labelling, tortuosity features, access prediction. The in-house device claims one narrow thing: visualisation support with mandatory overread (Doc 02). Different purpose means different device. Upstream is therefore not an equivalent device for Doc 04 purposes, and no one can argue the hospital simply relabelled research software.
@@ -63,7 +65,7 @@ Limits, stated plainly. Adaptation does not excuse any condition. It strengthens
 
 ## 3. Hidden features and the wider-use path (transparency rule)
 
-The fork contains upstream modules outside the narrow purpose: access prediction, tortuosity scoring, vessel labelling names, attention maps. For the initial claim these are hidden from the clinical interface by configuration, not removed from the repository. The hospital declares this openly in Docs 02, 06, and 12: what is hidden, where the flag lives, and the release proof test that confirms clinicians cannot reach it.
+Recall the device from Doc 02: a vessel map, a version label, an honest failure message. The fork contains more than that, because upstream Arterial ships extra modules: access prediction, tortuosity scoring, vessel labelling names, attention maps. For the initial claim these extras are hidden from the clinical interface by configuration, not removed from the repository. The hospital declares this openly in Docs 02, 06, and 12: what is hidden, where the flag lives, and the release proof test that confirms clinicians cannot reach it.
 
 Uncovering any hidden output for clinical display is a new intended purpose. It requires a Doc 02 revision, fresh non-equivalence analysis, risk and validation updates, and a new declaration before use. No silent enabling. The pathfinder scope stays credible because the wider scope has a defined door, not a backdoor.
 
@@ -74,7 +76,7 @@ Uncovering any hidden output for clinical display is a new intended purpose. It 
 - Data protection (GDPR), information security, medical professional duties, procurement rules.
 - IP/licence compliance (Doc 13).
 
-## 4. National check (complete first)
+## 5. National check (complete first)
 
 - `[HOSPITAL: Member State + competent authority + contact]`
 - `[HOSPITAL: national in-house restrictions/notifications applicable? Y/N + citation]`

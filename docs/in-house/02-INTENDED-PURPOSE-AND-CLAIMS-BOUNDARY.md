@@ -11,18 +11,28 @@
 - Upstream basis: `FLOWCAT-CV/arterial` commit `[HOSPITAL: pinned commit SHA]` + hospital diff `[HOSPITAL: fork commit SHA]`, tag `v2.1`-derived.
 - Legal manufacturer/user: `[HOSPITAL: single legal entity name + address]`, same entity for manufacture and use.
 
-## 2. Intended purpose statement (proposed narrow wording, adapt, then approve)
+## 2. What the device does, in plain words
+
+A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (Computed Tomography Angiography), a scan that shows the blood vessels. The device takes that scan and draws two extra pictures next to it: the vessels as a 3D shape, and the center lines running through them, like a map of the road network the catheter must travel. The physician looks at these pictures side by side with the original scan while discussing whether and how to remove the clot. The pictures add nothing the scan does not contain. They only make the vessel course easier to see and talk about.
+
+That is the whole device. A map display, plus a label saying which software version drew it, plus an honest failure message when the map cannot be drawn. Read the formal statement below once the picture is clear.
+
+Intended purpose statement (proposed narrow wording, adapt, then approve):
 
 > `[HOSPITAL-DEVICE]` is an in-house CTA vascular visualisation aid for use inside `[HOSPITAL]` only. It renders extracranial vessel segmentation and centerlines from head-and-neck CTA alongside the native CTA to support planning discussion for adults with suspected acute ischaemic stroke considered for mechanical thrombectomy. All clinical decisions are made by the responsible physician from the source CTA and standard clinical information; the device output is adjunctive and requires mandatory overread. The device does not triage, diagnose, or recommend treatment or access route.
 
 ## 3. In-scope claims (exhaustive)
 
-1. Display of binary vessel mask + centerlines derived from the hospital-frozen pipeline, co-registered to input CTA grid.
-2. Display of pipeline provenance per case (device version, model versions, input StudyInstanceUID hash, QC flags).
-3. Failure signalling: explicit "no output / degraded output" state when QC checks fail.
-4. On-prem execution; no external data transfer during inference.
+In plain words first, technical terms second:
 
-## 4. Out-of-scope firewall (displaying any of these to clinicians voids this scope)
+1. The vessel map display: the software marks which picture elements belong to blood vessels (the vessel mask) and draws the lines through their centers (centerlines), aligned onto the original scan grid so map and scan overlap exactly.
+2. The provenance label: every map carries its own identity card, device version, model versions, a hash (a fingerprint number) of the input scan identity, and the Quality Control verdict. A map can never be mistaken for another case or another software version.
+3. Honest failure: when Quality Control checks fail, the device shows an explicit no-output or degraded-output state. It never shows a plausible-looking wrong map silently.
+4. Local execution: the computation runs on hospital computers. Scan data leaves the hospital for no step of it.
+
+## 4. Where the device stops (out-of-scope firewall)
+
+The list above is everything the device does. Everything below stays a physician task, and showing any of it to clinicians voids this scope and triggers the wider-use path in Doc 01 section 3:
 
 - Access-difficulty probability, attention maps, tortuosity scores as thresholds, or any "difficult/easy" flag.
 - Intracranial-only mode outputs, landmark-based measurements, or automated reports beyond visualisation.

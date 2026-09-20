@@ -7,7 +7,11 @@
 
 ## 1. Proposition
 
-Adapt upstream Arterial v2.1 (research, non-commercial licence) into a **frozen, hospital-owned fork** used only inside `[HOSPITAL: legal entity name]` for **CTA vascular visualisation support** in anterior-circulation stroke planning discussion. No CE marking is sought; the legal theory is **MDR Article 5(5) in-house exemption** (MDCG 2023-1). All Annex I General Safety and Performance Requirements (GSPRs) deemed applicable must still be met, under the hospital's own QMS.
+A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (Computed Tomography Angiography) scan. A hospital-owned software draws the vessels as a 3D map with center lines, shows it next to the original scan, and labels which software version drew it. The physician uses the map plus the scan to discuss clot removal. The map never decides anything. If the map cannot be drawn reliably, the software says so instead of guessing.
+
+To get there, the hospital takes upstream Arterial v2.1 (a research framework, non-commercial licence), copies it into a frozen hospital-owned version, hardens it, validates it on local scans, and runs it only inside its own legal entity. No CE marking is sought; the legal theory is the MDR (Medical Device Regulation) Article 5(5) in-house exemption (MDCG 2023-1, Medical Device Coordination Group guidance). All applicable Annex I General Safety and Performance Requirements (GSPRs) must still be met, under the hospital's own QMS (Quality Management System).
+
+Full positive definition of the device: [Doc 02](02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md). If anything below feels abstract, read Doc 02 first and come back.
 
 ## 2. What must simultaneously be true (all eight)
 
@@ -26,13 +30,11 @@ Plus overarching: **non-industrial scale** (own-patient volume only, no batch pr
 
 Failure of any one condition collapses the exemption. Fallbacks: CE-marked device, custom-made route (not applicable to multi-patient software), investigational-device route, or research-only use with no clinical reliance.
 
-## 3. Why narrow scope was chosen
+## 3. Why this scope and not the full Arterial
 
-Full Arterial (access prediction, tortuosity thresholds driving decisions) would be MDSW with higher Rule 11 class, stronger clinical-evidence burden, and a much harder Art 5(5)(c) argument (several CE planning viewers exist). The **visualisation-only** scope:
+The device in section 1 is deliberately small: a map display with a version label and an honest failure message. That is the whole claim, defined positively in Doc 02. The reasons for staying small follow.
 
-- keeps clinician judgment as the sole decision-maker (reduces GSPR clinical-evidence depth but does not remove it),
-- excludes the least-validated, highest-risk model (access prediction) from clinical display,
-- makes non-equivalence arguable on **workflow integration + local-population performance** rather than on novelty alone.
+Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Each of those outputs would raise the device into a higher risk class, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and grounds non-equivalence in workflow fit plus local performance rather than novelty.
 
 Widening scope later = new intended purpose = repeat Docs 02-05, 08-10.
 
