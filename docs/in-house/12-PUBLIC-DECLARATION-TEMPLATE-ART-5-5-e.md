@@ -38,4 +38,4 @@
 ---
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

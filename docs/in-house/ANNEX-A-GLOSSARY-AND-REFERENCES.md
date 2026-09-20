@@ -31,4 +31,4 @@
 - This package: `v0.1.0-DRAFT`, `2026-09-20`. Hospital to re-verify upstream state at fork time, upstream moves, the frozen fork does not.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

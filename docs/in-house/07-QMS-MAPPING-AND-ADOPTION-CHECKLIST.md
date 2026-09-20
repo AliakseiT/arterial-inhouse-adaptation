@@ -88,4 +88,4 @@ Numbers above are invented. Your rows must point at your system, your versions, 
 | Management | Awareness | Doc 00 + (g)(h) duties |
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

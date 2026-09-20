@@ -9,11 +9,11 @@
 
 With the exception of the relevant Annex I GSPRs (General Safety and Performance Requirements), the MDR (Medical Device Regulation) does not apply to a device manufactured and used only within the same EU health institution, on a non-industrial scale, meeting all Art 5(5)(a)-(h) conditions. Upstream Arterial is not a device placed on the market; the hospital's frozen, renamed fork (`[HOSPITAL: in-house device identifier, e.g. HOSP-ART-VIZ-1.0]`) is the candidate in-house device. Software use counts as "use within" when the clinical act occurs inside the legal entity, including remote viewing by its staff on its systems, provided nothing is made available to another legal entity (MDCG 2023-1 §3.2.2, §3.4).
 
-## 1A. Adaptation as manufacture, the extra defense line
+## 1A. Adaptation as manufacture
 
-First pass? Read Doc 02 before this section. It defines the device positively in one page. What follows assumes you know what the device is.
+> Prerequisite: Doc 02 defines the device. Readers unfamiliar with the device definition review Doc 02 before this section.
 
-You see it correctly. The hospital does not take open-source code into a product. It manufactures a distinct device by adapting research code to a different intended purpose, and that adaptation is itself part of the Article 5(5) case. Three limbs, each filed as evidence.
+The hospital does not transfer open-source code into a product. It manufactures a distinct device by adapting research code to a different intended purpose, and that adaptation forms part of the Article 5(5) case in three respects, each filed as evidence.
 
 First, upstream purpose versus in-house purpose. Upstream Arterial is a research framework with a broad, unvalidated claim set: segmentation, centerlines, labelling, tortuosity features, access prediction. The in-house device claims one narrow thing: visualisation support with mandatory overread (Doc 02). Different purpose means different device. Upstream is therefore not an equivalent device for Doc 04 purposes, and no one can argue the hospital simply relabelled research software.
 
@@ -21,7 +21,7 @@ Second, the adaptation record is manufacturing evidence. The fork log shows the 
 
 Third, local validation closes the loop. Upstream metrics describe other data. Hospital validation (Doc 10) characterises the adapted build on local scanners and protocols. That is the performance data (f) demands and the reason (c) holds: the need is met at appropriate performance only after hospital-specific adaptation, which no off-the-shelf device underwent for this site.
 
-Limits, stated plainly. Adaptation does not excuse any condition. It strengthens (c), (f), and (g) only if the record is real: dated fork diffs, reviewed changes, validation on the frozen build. A thin wrapper with no local evidence adds nothing and hurts credibility.
+Limits. Adaptation does not excuse any condition. It supports (c), (f), and (g) only where the record is complete: dated fork diffs, reviewed changes, validation on the frozen build. An adaptation without local evidence carries no weight.
 
 ## 2. Condition-by-condition map
 
@@ -65,9 +65,11 @@ Limits, stated plainly. Adaptation does not excuse any condition. It strengthens
 
 ## 3. Hidden features and the wider-use path (transparency rule)
 
-Recall the device from Doc 02: a vessel map, a version label, an honest failure message. The fork contains more than that, because upstream Arterial ships extra modules: access prediction, tortuosity scoring, vessel labelling names, attention maps. For the initial claim these extras are hidden from the clinical interface by configuration, not removed from the repository. The hospital declares this openly in Docs 02, 06, and 12: what is hidden, where the flag lives, and the release proof test that confirms clinicians cannot reach it.
+> Prerequisite: Doc 02 defines the device as a vessel map, a version label, and an explicit failure state. This section builds on that definition.
 
-Uncovering any hidden output for clinical display is a new intended purpose. It requires a Doc 02 revision, fresh non-equivalence analysis, risk and validation updates, and a new declaration before use. No silent enabling. The pathfinder scope stays credible because the wider scope has a defined door, not a backdoor.
+The fork contains more than the defined device, because upstream Arterial ships extra modules: access prediction, tortuosity scoring, vessel labelling names, attention maps. For the initial claim these extras are hidden from the clinical interface by configuration, not removed from the repository. The hospital declares this openly in Docs 02, 06, and 12: what is hidden, where the flag lives, and the release proof test that confirms clinicians cannot reach it.
+
+Uncovering any hidden output for clinical display is a new intended purpose. It requires a Doc 02 revision, fresh non-equivalence analysis, risk and validation updates, and a new declaration before use. Enabling outside this process is not permitted.
 
 ## 4. What (5)(5) does NOT waive
 
@@ -85,4 +87,4 @@ Uncovering any hidden output for clinical display is a new intended purpose. It 
 - Reviewed with: `[HOSPITAL: regulatory function sign-off, date]`
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

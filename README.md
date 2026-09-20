@@ -20,7 +20,7 @@ Access prediction, tortuosity scores as decision thresholds, and intracranial-on
 
 ## How to read this package
 
-This README is the index. Start here, leave to read a document, come back here when in doubt. Every document ends with a return link to this section.
+This README is the index. Begin here; each document links back to this section.
 
 Path 1, decide in 30 minutes. Definition first, decision second, regulation third. Read in this order:
 

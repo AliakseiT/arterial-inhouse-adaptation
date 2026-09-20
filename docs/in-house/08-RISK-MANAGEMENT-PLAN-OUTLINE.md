@@ -26,7 +26,7 @@
 | H9 | Security/PHI breach (DICOM cache, logs, remote viewing) | Privacy harm, loss of trust | On-prem/air-gap, RBAC, encryption at rest/in transit, audit trail, DPIA | Security review + pentest proportionate |
 | H10 | Unavailable/slow inference delaying planning discussion | Workflow delay in time-critical stroke care | Explicit non-time-critical positioning is **not** credible in stroke, instead: latency budget, fallback to native-CTA-only workflow, downtime procedure | Latency + downtime drill |
 
-H10 note: do not claim "not for time-critical use" while deploying in stroke planning, the risk file must handle time pressure honestly.
+H10 note: do not claim "not for time-critical use" while deploying in stroke planning, the risk file must account for time pressure explicitly.
 
 ## 3. SOUP/ML-specific risks
 
@@ -44,4 +44,4 @@ H10 note: do not claim "not for time-critical use" while deploying in stroke pla
 Feeds Doc 11: discordance log, QC-failure log, complaint/incident review, periodic risk-review demos. New hazards → update file → assess re-validation → update declaration if GSPR picture changes.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

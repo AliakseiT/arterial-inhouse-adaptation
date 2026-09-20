@@ -40,4 +40,4 @@ Maintained at `[HOSPITAL: QMS path]`: Docs 01-12 current versions, frozen source
 Upstream monitoring `[HOSPITAL: owner + frequency]`; every hospital change assessed for purpose/safety/performance impact → re-validation scoping (Doc 10 §5) → updated Docs 02/05/06/08/12 as affected → new release tag → re-training if workflow changed. Unassessed auto-updates are forbidden.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

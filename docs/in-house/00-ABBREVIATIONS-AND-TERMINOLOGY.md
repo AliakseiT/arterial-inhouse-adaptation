@@ -62,4 +62,4 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | HTA | Health Technology Assessment. Mentioned only to bound what Doc 14 is not. |
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

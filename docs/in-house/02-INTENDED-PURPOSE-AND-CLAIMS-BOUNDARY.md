@@ -15,7 +15,7 @@
 
 A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (Computed Tomography Angiography), a scan that shows the blood vessels. The device takes that scan and draws two extra pictures next to it: the vessels as a 3D shape, and the center lines running through them, like a map of the road network the catheter must travel. The physician looks at these pictures side by side with the original scan while discussing whether and how to remove the clot. The pictures add nothing the scan does not contain. They only make the vessel course easier to see and talk about.
 
-That is the whole device. A map display, plus a label saying which software version drew it, plus an honest failure message when the map cannot be drawn. Read the formal statement below once the picture is clear.
+Summary: a map display, a version label identifying the software that produced it, and an explicit failure state where no map can be drawn. The formal statement follows.
 
 Intended purpose statement (proposed narrow wording, adapt, then approve):
 
@@ -23,11 +23,11 @@ Intended purpose statement (proposed narrow wording, adapt, then approve):
 
 ## 3. In-scope claims (exhaustive)
 
-In plain words first, technical terms second:
+Each claim is stated in plain words first, with the technical term following in parentheses where one applies:
 
 1. The vessel map display: the software marks which picture elements belong to blood vessels (the vessel mask) and draws the lines through their centers (centerlines), aligned onto the original scan grid so map and scan overlap exactly.
 2. The provenance label: every map carries its own identity card, device version, model versions, a hash (a fingerprint number) of the input scan identity, and the Quality Control verdict. A map can never be mistaken for another case or another software version.
-3. Honest failure: when Quality Control checks fail, the device shows an explicit no-output or degraded-output state. It never shows a plausible-looking wrong map silently.
+3. Explicit failure state: when Quality Control checks fail, the device shows an explicit no-output or degraded-output state. It never shows a plausible-looking wrong map silently.
 4. Local execution: the computation runs on hospital computers. Scan data leaves the hospital for no step of it.
 
 ## 4. Where the device stops (out-of-scope firewall)
@@ -63,4 +63,4 @@ Upstream modules `access_prediction`, `feature_extraction` quantitative outputs,
 - Linked risk plan: Doc 08; linked validation: Doc 10.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

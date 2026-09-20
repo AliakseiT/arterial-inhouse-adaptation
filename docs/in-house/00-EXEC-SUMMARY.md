@@ -11,7 +11,7 @@ A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (C
 
 To get there, the hospital takes upstream Arterial v2.1 (a research framework, non-commercial licence), copies it into a frozen hospital-owned version, hardens it, validates it on local scans, and runs it only inside its own legal entity. No CE marking is sought; the legal theory is the MDR (Medical Device Regulation) Article 5(5) in-house exemption (MDCG 2023-1, Medical Device Coordination Group guidance). All applicable Annex I General Safety and Performance Requirements (GSPRs) must still be met, under the hospital's own QMS (Quality Management System).
 
-Full positive definition of the device: [Doc 02](02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md). If anything below feels abstract, read Doc 02 first and come back.
+Full device definition: [Doc 02](02-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md). Readers unfamiliar with the device definition review Doc 02 before continuing.
 
 ## 2. What must simultaneously be true (all eight)
 
@@ -32,7 +32,7 @@ Failure of any one condition collapses the exemption. Fallbacks: CE-marked devic
 
 ## 3. Why this scope and not the full Arterial
 
-The device in section 1 is deliberately small: a map display with a version label and an honest failure message. That is the whole claim, defined positively in Doc 02. The reasons for staying small follow.
+Section 1 describes a deliberately small claim set: a map display, a version label, and an explicit failure state (Doc 02). The reasons for this scope are as follows.
 
 Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Each of those outputs would raise the device into a higher risk class, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and grounds non-equivalence in workflow fit plus local performance rather than novelty.
 
@@ -57,4 +57,4 @@ If the hospital cannot staff a device owner, a clinical lead, and QA oversight f
 If GO: proceed in document order 01 → 07 before any engineering beyond a non-clinical feasibility spike on de-identified data.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

@@ -35,4 +35,4 @@ Contact the Arterial research team (via upstream GitHub issues/contact) to cover
 - Procurement of GPU/cloud services does not transfer device responsibility; DPAs and processor terms must keep processing inside the (a)-boundary per counsel.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

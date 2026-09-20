@@ -66,4 +66,4 @@ Purpose, target users, mandatory overread statement, input requirements, step-by
 - Last drill date/result: `[HOSPITAL: ...]` (target: complete pack retrievable ≤ `[HOSPITAL: e.g. 10 working days]`).
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

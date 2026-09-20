@@ -52,4 +52,4 @@ Signers: `[clinical lead + regulatory/QA + date]`.
 - Doc 14 (HEOR outline) may supply workflow/performance context but must never substitute for this technical/clinical justification.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

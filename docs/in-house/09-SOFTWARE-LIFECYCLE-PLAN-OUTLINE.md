@@ -48,4 +48,4 @@ Unit (geometry utils, QC gates, provenance binding) → integration (CTA→NIfTI
 Release decision signed by engineering + QA + clinical lead; installation qualification on each inference node (weight hashes, smoke case, viewer integration, rollback image ready); deployment log per node; no auto-update. Any weight, code, dependency, or protocol change = new release candidate + re-validation scoping (Doc 10 §5).
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).

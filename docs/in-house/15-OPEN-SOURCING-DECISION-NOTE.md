@@ -25,4 +25,4 @@ Upstream code/weights beyond fair-use excerpts (NC redistribution bar), hospital
 Without all five: do not publish. A private repo with good hygiene is the compliant steady state.
 
 ---
-> Doubts? Return to the [reading index](../../README.md#how-to-read-this-package).
+> Return to the [reading index](../../README.md#how-to-read-this-package).
