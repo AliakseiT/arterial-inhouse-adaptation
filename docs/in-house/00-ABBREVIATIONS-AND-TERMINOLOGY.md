@@ -68,7 +68,8 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 
 - MDR (EU) 2017/745, Art 2(1), 2(36), 5(5), 10(9), Annex I, Annex VIII Rule 11, Annex XIII (custom-made, contrast only).
 - MDCG 2023-1 (Jan 2023): health-institution exemption guidance with the Annex A declaration model.
-- MDCG 2019-11: Medical Device Software qualification and classification.
+- MDCG 2019-11 rev.1 (June 2025): Medical Device Software qualification and classification, Annex III Rule 11 table, Annex IV examples.
+- IMDRF/SaMD WG/N12FINAL:2014: Software as a Medical Device risk categorisation framework (International Medical Device Regulators Forum).
 - ISO 14971 (risk), IEC 62304 plus IEC 82304-1 (software lifecycle and health software), IEC 62366-1 (usability), ISO 13485 and 15189 (Quality Management System context), ISO/IEC 27001 plus 42001 (security and AI management).
 - Upstream: `FLOWCAT-CV/arterial` v2.1 (PolyForm NC 1.0.0), Zenodo `10.5281/zenodo.22694951` (CC BY-NC 4.0, Creative Commons Attribution NonCommercial), TotalSegmentator Apache-2.0 sub-model; Canals 2023, Wasserthal 2023, Beyer 2026, Isensee 2021.
 - Hospital-agnostic Quality Management System model: `AliakseiT/dearauditor-qms-baseline` (SOP and work-instruction record templates, mapped, not vendored).

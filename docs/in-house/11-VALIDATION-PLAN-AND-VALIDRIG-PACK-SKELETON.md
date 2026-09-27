@@ -19,7 +19,7 @@ If any floor is missed: no clinical use; either improve (new release candidate) 
 
 ## 2. Retrospective study (ground-truth)
 
-- Dataset: `[HOSPITAL: N CTA, consecutive eligible cases over DATES, inclusion/exclusion, de-identification, ethics/DPIA ref]`; split dev/validation/test with test locked before tuning operating point.
+- Dataset: `[HOSPITAL: N CTA, consecutive eligible cases over DATES, inclusion/exclusion, de-identification, ethics/DPIA ref]`; split dev/validation/test with test locked before tuning operating point. The test set comes from a later acquisition period than the development data (temporal separation), as the IIb-equivalent depth in Doc 04 §3 requires.
 - Ground truth: `[HOSPITAL: e.g. two-reader vessel segmentation + adjudication protocol, annotation tool, reader credentials]`.
 - Execution: frozen build only; provenance logged per case; failures analysed by anatomy/protocol stratum; limitations encoded into IFU-equivalent (Doc 07 §7).
 - Report: methods, CONSORT-style flow, per-stratum results, failure gallery, trace to requirements/risks.

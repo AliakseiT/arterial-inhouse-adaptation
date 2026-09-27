@@ -34,7 +34,7 @@ Failure of any one condition collapses the exemption. Fallbacks: CE-marked devic
 
 Section 1 describes a deliberately small claim set: a map display, a version label, and an explicit failure state (Doc 03). The reasons for this scope are as follows.
 
-Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Each of those outputs would raise the device into a higher risk class, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and grounds non-equivalence in workflow fit plus local performance rather than novelty.
+Even the narrow scope is Class IIb-equivalent: stroke is a critical situation and the map is used in near-term treatment planning (Doc 04 §2). Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Showing those outputs would push the device toward Class III-equivalent, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and grounds non-equivalence in workflow fit plus local performance rather than novelty.
 
 Widening scope later = new intended purpose = repeat Docs 04-06, 08-10.
 
