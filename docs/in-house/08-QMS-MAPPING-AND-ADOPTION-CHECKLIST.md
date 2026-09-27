@@ -38,7 +38,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] A3. Doc 03 narrow purpose approved by clinical lead + QA. `[…]`
 - [ ] A4. Doc 04 qualification/classification-equivalent recorded. `[…]`
 - [ ] A5. Doc 05 non-equivalence search + determination signed **before build**. `[…]`
-- [ ] A6. Licence clearance to fork/deploy internally (Doc 14) + private-repo created. `[…]`
+- [ ] A6. Noncommercial licence scope confirmed for this hospital (Doc 14 §1, §3) + private fork repository created. `[…]`
 - [ ] A7. Device owner, clinical lead, QA oversight named; resourcing for lifetime committed. `[…]`
 - [ ] A8. GO decision (Doc 01 §5) recorded. `[…]`
 

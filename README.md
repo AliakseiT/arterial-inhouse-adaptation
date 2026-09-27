@@ -1,6 +1,6 @@
 # Arterial in-house clinical adaptation package
 
-> Status: DRAFT decision-support package, not a device file, not legal advice.
+> Status: DRAFT decision-support package, not a device file, not legal advice. Not yet used by any hospital.
 > Regulatory basis: EU MDR (Medical Device Regulation) Article 5(5) health-institution exemption, per MDCG 2023-1 (Medical Device Coordination Group guidance, January 2023).
 > Intended reader: hospital QA/regulatory, clinical engineering, stroke neurology/interventional neuroradiology, IT/security, and hospital management.
 > Assumption: adopting hospital already operates an appropriate QMS (Quality Management System). This package does not replace it, it maps into it.
@@ -8,7 +8,7 @@
 
 ## What this is
 
-Upstream `FLOWCAT-CV/arterial` (v2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0, Creative Commons Attribution NonCommercial) is a research framework for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
+Upstream [`FLOWCAT-CV/arterial`](https://github.com/FLOWCAT-CV/arterial) (version 2.1, PolyForm Noncommercial 1.0.0; models CC BY-NC 4.0, Creative Commons Attribution NonCommercial) is a research framework for automated vascular analysis from CTA (Computed Tomography Angiography): nnU-Net segmentation, VMTK (Vascular Modeling Toolkit) centerlines, landmark detection, GNN (Graph Neural Network) vessel labelling, tortuosity features, access prediction.
 
 This package helps a hospital decide, under its own QMS, whether and how to fork, freeze, harden, and validate that research code into a narrowly scoped in-house device for internal clinical use, and to document every Article 5(5)(a)-(h) condition if it proceeds.
 
@@ -57,16 +57,18 @@ If in doubt, return here:
 | What it costs and whether it stays worth it | [Doc 15](docs/in-house/15-VIABILITY-ANALYSIS.md), viability bar plus the data that proves it |
 | What an abbreviation means | [Terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md) |
 
-## Repository intent
+## Repository scope and licence
 
-This is now the private repository `AliakseiT/arterial-inhouse-adaptation`. It stays private until licence clearance with VHIR (Vall d'Hebron Research Institute) and UB (Universitat de Barcelona) for any hospital deployment and any future open-sourcing, plus removal of hospital-identifying, patient, or infrastructure content.
+This public repository holds a method: documents and fill-in templates. It contains no upstream Arterial code, no model weights, and no patient, hospital, or infrastructure data. A hospital that adopts the method keeps its fork and its filled-in records in its own private repository and QMS. [Doc 14](docs/in-house/14-LICENSING-AND-SOURCE-GOVERNANCE.md) sets the rules for that fork.
 
-See [Doc 14](docs/in-house/14-LICENSING-AND-SOURCE-GOVERNANCE.md). Do not push upstream code verbatim to a public repo without upstream consent, PolyForm NC governs redistribution and derivative publication. Publication decisions, if any, are recorded in the hospital QMS with prior written upstream consent; this template pre-decides nothing about publication.
+The package is independent of the upstream Arterial project and is not endorsed by its rights holders, VHIR (Vall d'Hebron Research Institute) and UB (Universitat de Barcelona). The upstream authors know about it. No hospital has used it yet; corrections from anyone who has been through an Article 5(5) review are welcome as issues.
+
+Licence: the documents here are licensed under [CC BY 4.0](LICENSE) (Creative Commons Attribution 4.0 International). Upstream Arterial code (PolyForm Noncommercial 1.0.0) and weights (CC BY-NC 4.0) keep their own licences; nothing here relicenses them.
 
 Related tooling, not vendored here:
 
-- QMS content model: `AliakseiT/dearauditor-qms-baseline`, SOP/WI/record templates referenced in Doc 08, mapped not copied.
-- Validation harness engine: `AliakseiT/validrig`, Doc 11 defines an arterial-visualisation pack against its engine.
-- Value methods: `AliakseiT/heor-skills`, Doc 15 defines the narrow value outline.
+- QMS content model: [`AliakseiT/dearauditor-qms-baseline`](https://github.com/AliakseiT/dearauditor-qms-baseline), SOP/WI/record templates referenced in Doc 08, mapped not copied.
+- Validation harness engine: [`AliakseiT/validrig`](https://github.com/AliakseiT/validrig), Doc 11 defines an arterial-visualisation pack against its engine.
+- Value methods: [`AliakseiT/heor-skills`](https://github.com/AliakseiT/heor-skills), Doc 15 defines the viability analysis.
 
 No code in this package is a medical device. No document here asserts compliance, all `[HOSPITAL: ...]` brackets must be completed and approved inside the hospital QMS.
