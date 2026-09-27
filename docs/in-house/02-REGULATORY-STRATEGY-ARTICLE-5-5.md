@@ -79,6 +79,7 @@ Uncovering any hidden output for clinical display is a new intended purpose. It 
 - National law (device-type restrictions, notification duties, language rules for information supplied with the device).
 - Data protection (GDPR), information security, medical professional duties, procurement rules.
 - IP/licence compliance (Doc 14).
+- The EU AI Act (Regulation (EU) 2024/1689), which is separate law with its own scope test (section 6).
 
 ## 5. National check (complete first)
 
@@ -87,6 +88,23 @@ Uncovering any hidden output for clinical display is a new intended purpose. It 
 - `[HOSPITAL: language requirements for clinician-facing information]`
 - `[HOSPITAL: incident-reporting route for in-house devices]`
 - Reviewed with: `[HOSPITAL: regulatory function sign-off, date]`
+
+## 6. EU AI Act scoping
+
+Status at drafting (2026-09): the AI Act (Regulation (EU) 2024/1689) as amended by the Digital Omnibus on AI (Regulation (EU) 2026/1744, in force 27 July 2026). The Omnibus moved the application date for high-risk AI systems in Annex I products, medical devices included, to 2 August 2028, and for Annex III systems to 2 December 2027. Verify against the consolidated text at adoption.
+
+The device is an AI system: the segmentation is a trained model that infers outputs from input data. The hospital develops it and puts it into service under its own name for its own use, so it is the provider as well as the deployer.
+
+High-risk test, Article 6(1). An AI system linked to an Annex I product, such as a device under the MDR, is high-risk only if both hold: (a) it is a safety component of the product or is the product, and (b) the product "is required to undergo a third-party conformity assessment" under that legislation. An in-house device under Article 5(5) goes through no notified body, so (b) does not hold. On this reading the Doc 03 device is not high-risk under Article 6(1).
+
+High-risk test, Article 6(2) and Annex III. Annex III point 5(d) lists emergency healthcare patient triage systems. The Doc 03 device does not triage, and Doc 03 section 4 excludes triage and prioritisation. Enabling either would make the device a high-risk AI system from 2 December 2027, in addition to the Doc 02 section 3 wider-use path.
+
+Obligations that apply anyway:
+
+- AI literacy (Article 4, applicable since 2 February 2025): staff who operate or use the system have sufficient AI literacy. The Omnibus softened this duty; check the consolidated wording. Doc 08 section 4 training covers it.
+- Transparency (Article 50) targets systems that interact with people or generate synthetic content. A segmentation overlay is analysis of a real scan, not generated content. The provenance label (Doc 03 claim 2) marks every map as device output regardless.
+
+Limits of this reading. The Article 6(1)(b) argument is the common reading, not settled case law. A competent authority or counsel may take a different view. The Omnibus also empowers the Commission to limit AI Act requirements where sectoral law already imposes equivalent obligations; later implementing acts may change the picture. If the device were ever CE-marked through a notified body, it would be high-risk under Article 6(1) from 2 August 2028. Record: `[HOSPITAL: AI Act position, counsel reviewer, date]`.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

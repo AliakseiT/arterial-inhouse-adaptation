@@ -81,7 +81,7 @@ Numbers above are invented. Your rows must point at your system, your versions, 
 
 | Role | Needs device training | Content |
 |---|---|---|
-| Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting |
+| Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting, AI literacy (how the model fails, automation bias; AI Act Art 4) |
 | Radiographers / PACS operators | Yes (handling) | Input spec, rejection handling, provenance check |
 | Clinical engineering / IT | Yes | Deployment, monitoring, rollback, backup |
 | QA/regulatory | Yes | Docs 03-13, authority interface |
