@@ -36,6 +36,4 @@
 **Version history:** `[v1.0, YYYY-MM-DD, initial; v1.1, …]`
 
 ---
-
----
 > Return to the [reading index](../../README.md#how-to-read-this-package).

@@ -33,7 +33,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 ## 2. Hospital adoption checklist (complete in order; record evidence ref + date + signer per line)
 
 ### Phase A, Decide (no engineering beyond de-identified feasibility)
-- [ ] A1. National law check (Doc 02 §4) signed. `[ref/date/signer]`
+- [ ] A1. National law check (Doc 02 §5) signed. `[ref/date/signer]`
 - [ ] A2. Same-legal-entity + non-industrial-scale confirmation signed. `[…]`
 - [ ] A3. Doc 03 narrow purpose approved by clinical lead + QA. `[…]`
 - [ ] A4. Doc 04 qualification/classification-equivalent recorded. `[…]`
@@ -43,7 +43,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] A8. GO decision (Doc 01 §5) recorded. `[…]`
 
 ### Phase B, Build under QMS
-- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Docs 07/09). `[…]`
+- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Doc 07 §2, Doc 10 §2). `[…]`
 - [ ] B2. SBOM + SOUP risk + CVE review filed. `[…]`
 - [ ] B3. Access-prediction/quantitative outputs disabled + verified (Doc 03 §4 proof test). `[…]`
 - [ ] B4. DICOM→NIfTI intake, QC gates, fail-stop, provenance logging implemented. `[…]`
@@ -54,7 +54,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 ### Phase C, Validate, approve, declare
 - [ ] C1. Local validation per Doc 11 executed; acceptance criteria met; report approved. `[…]`
 - [ ] C2. Usability summative (overread compliance under time pressure) passed. `[…]`
-- [ ] C3. Residual benefit-risk accepted (Docs 06/08). `[…]`
+- [ ] C3. Residual benefit-risk accepted (Docs 06/09). `[…]`
 - [ ] C4. Release decision + installation qualification signed. `[…]`
 - [ ] C5. Training completed and recorded (role matrix). `[…]`
 - [ ] C6. Public declaration published (Doc 13) + version linked to frozen build. `[…]`
@@ -66,7 +66,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] D3. Any change → change control + re-validation assessment before deployment. `[…]`
 - [ ] D4. Retirement/decommissioning plan on file. `[…]`
 
-## 4. Worked example (fictional, do not copy verbatim)
+## 3. Worked example (fictional, do not copy verbatim)
 
 Normative mapping above stays blank until the hospital completes it. The example below shows one fictional hospital filling two rows, only to show the shape of done.
 
@@ -77,7 +77,7 @@ Normative mapping above stays blank until the hospital completes it. The example
 
 Numbers above are invented. Your rows must point at your system, your versions, your records. An auditor who finds copied SOP numbers finds a gap.
 
-## 3. Training roles (minimum)
+## 4. Training roles (minimum)
 
 | Role | Needs device training | Content |
 |---|---|---|

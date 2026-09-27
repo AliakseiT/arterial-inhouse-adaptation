@@ -49,7 +49,7 @@ Signers: `[clinical lead + regulatory/QA + date]`.
 
 - Re-check cadence: `[HOSPITAL: annual minimum]` + trigger on new EUDAMED entries, vendor launches, guideline changes.
 - If an equivalent appears: freeze new clinical use, assess transition to the CE device, record in CAPA/change (Doc 12). Continued in-house use requires fresh justification.
-- Doc 15 (HEOR outline) may supply workflow/performance context but must never substitute for this technical/clinical justification.
+- Doc 15 (viability analysis) plays no part in this justification. Economic evidence is inadmissible for (c).
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

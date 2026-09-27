@@ -28,7 +28,7 @@ Relaxed minimum for pathfinder adoption:
 ## 4. Discordance and incident handling
 
 - Discordance definition: `[HOSPITAL: e.g. device visualisation materially disagrees with final radiology read, or QC flag disputed]`. Log all; sample-review even when overread "caught" the issue, near-misses count.
-- Incident: any use that caused or could cause harm → hospital incident system + national in-house reporting route `[HOSPITAL: authority + timeline]` + risk-file update + CAPA. Do not wait for quarterly review.
+- Incident: any use that caused or could cause harm → hospital incident system + national in-house reporting route `[HOSPITAL: authority + timeline]` + risk-file update + CAPA. Do not wait for the scheduled review.
 - Corrective action scale: advisory notice to users → temporary suspension → version recall/rollback → purpose narrowing → retirement. Each has a pre-assigned decision-maker `[HOSPITAL: names/roles]`.
 
 ## 5. Authority pack (Art 5(5)(d) readiness)

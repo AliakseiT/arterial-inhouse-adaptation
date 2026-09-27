@@ -8,7 +8,7 @@
 
 - In-house device name: `[HOSPITAL: e.g. HOSP-ART-VIZ]`
 - Version: `[HOSPITAL: frozen fork tag, e.g. 1.0.0+hosp1]`
-- Upstream basis: `FLOWCAT-CV/arterial` commit `[HOSPITAL: pinned commit SHA]` + hospital diff `[HOSPITAL: fork commit SHA]`, tag `v2.1`-derived.
+- Upstream basis: `FLOWCAT-CV/arterial` commit `[HOSPITAL: pinned commit SHA]` + hospital diff `[HOSPITAL: fork commit SHA]`, upstream version 2.1 (`setup.py`; upstream publishes no release tags).
 - Legal manufacturer/user: `[HOSPITAL: single legal entity name + address]`, same entity for manufacture and use.
 
 ## 2. What the device does, in plain words
@@ -52,7 +52,7 @@ Upstream modules `access_prediction`, `feature_extraction` quantitative outputs,
 
 ## 6. System boundary
 
-- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Docs 06/06/09).
+- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Doc 07 §7).
 - NOT part of device: PACS, hospital network, upstream repo, training workstations, research notebooks.
 - Interfaces treated as SOUP/external: nnU-Net, MONAI, VMTK, PyTorch Geometric, TotalSegmentator mandible model (Apache-2.0), CUDA/drivers, listed in SBOM (Doc 10).
 

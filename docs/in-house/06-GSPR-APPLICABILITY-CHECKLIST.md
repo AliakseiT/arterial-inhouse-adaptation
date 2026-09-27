@@ -17,11 +17,11 @@
 | I.10-11: Mechanical, thermal, radiation, software-specific safety | Applicable (software safety) | IEC 62304 Class B/C controls (Doc 10); defensive input validation; fail-stop on QC failure; no silent degradation | Doc 10 + V&V (Doc 11) |
 | I.12: Devices with diagnostic/measuring function, accuracy/precision/stability | Applicable by analogy | Segmentation/centerline performance characterised on local data (Dice, centerline completeness, failure rate) with acceptance criteria; stability across scanner/protocol strata | Doc 11 validation report |
 | I.13: Protection against radiation | Not applicable (no radiation emission; CTA acquired by separate CE scanner) | Reason recorded | N/A |
-| I.14: Electronic programmable systems, repeatability, reliability, security, single-fault | Applicable (core software GSPR) | Repeatability (deterministic inference, seeded builds); single-fault analysis (fail-stop, QC gates); information security per Doc 10 §5 | Docs 10/10 |
+| I.14: Electronic programmable systems, repeatability, reliability, security, single-fault | Applicable (core software GSPR) | Repeatability (deterministic inference, seeded builds); single-fault analysis (fail-stop, QC gates); information security per Doc 10 §5 | Docs 10/11 |
 | I.15: Active implantable, N/A | Not applicable | Reason recorded | N/A |
-| I.16: Risks fromergonomics/use error (usability) | Applicable | IEC 62366-1 use engineering: overread workflow, warning design, time-pressure analysis, summative evaluation of overread compliance | Doc 10 §4 + Doc 11 usability |
-| I.17: Electromagnetic, N/A beyond I.9 | See I.9 |, |, |
-| I.18: Performance + benefit-risk | Applicable | Performance spec (Doc 04/07 §4) + benefit-risk statement in risk file; residual risk vs planning-discussion benefit | Doc 09 benefit-risk |
+| I.16: Risks from ergonomics/use error (usability) | Applicable | IEC 62366-1 use engineering: overread workflow, warning design, time-pressure analysis, summative evaluation of overread compliance | Doc 10 §4 + Doc 11 usability |
+| I.17: Electromagnetic, N/A beyond I.9 | See I.9 | See I.9 | See I.9 |
+| I.18: Performance + benefit-risk | Applicable | Performance spec (Doc 07 §4-5) + benefit-risk statement in risk file; residual risk vs planning-discussion benefit | Doc 09 benefit-risk |
 | Ch II (design/manufacture specifics 10-22): mostly N/A for pure software except software lifecycle | Applicable subset | Documented per Doc 10; no CMR/phthalates/nanomaterials claims (record N/A with reason) | Doc 10, SBOM |
 | Ch III.23: Labelling + information supplied (IFU-equivalent) | Applicable, adapted | Clinician-facing instructions: purpose, limits, overread duty, input requirements, failure states, version/provenance, support route; in `[HOSPITAL: language(s)]`; versioned with device | Doc 07 §7 (IFU-equivalent) |
 | Ch III: UDI | Not applicable as CE-UDI, but **internal identification required** for (e)(h) | Internal device ID + version + per-case provenance (StudyInstanceUID link, model versions) enabling traceability and corrective action | Doc 12 traceability |

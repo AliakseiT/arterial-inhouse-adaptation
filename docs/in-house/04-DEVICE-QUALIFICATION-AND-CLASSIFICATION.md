@@ -29,7 +29,7 @@ Record: `[HOSPITAL: classification-equivalent decision, rule cited, rationale, r
 | If class-equivalent is… | Then… |
 |---|---|
 | IIa-equiv (narrow scope) | Docs 06/08/10 as written are proportionate. Proceed. |
-| IIb-equiv (or scope creep) | Stop. Re-scope to Doc 03 or rebuild Docs 05/05/08/10 at IIb depth (independent validation cohorts, tighter residual-risk bar, deeper clinical evidence). Re-sign Doc 01. |
+| IIb-equiv (or scope creep) | Stop. Re-scope to Doc 03 or rebuild Docs 05, 09, 10, 11 at IIb depth (independent validation cohorts, tighter residual-risk bar, deeper clinical evidence). Re-sign Doc 01. |
 | Claimed Class I / non-device | Provide standalone rationale; authority is unlikely to accept for planning-support CTA software. Do not use to reduce validation. |
 
 ## 4. IEC 62304 safety class (distinct from MDR class)

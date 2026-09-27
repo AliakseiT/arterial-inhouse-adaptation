@@ -37,7 +37,7 @@ Limits. Adaptation does not excuse any condition. It supports (c), (f), and (g) 
 
 ### (c) Non-equivalence to CE devices
 - **Means:** documented justification, **before first manufacture**, that the target group's specific needs cannot be met, or not at appropriate performance, by an equivalent CE device. Technical, biological, or clinical grounds, not price or convenience.
-- **Evidence:** Doc 05 (search method, EUDAMED + vendor + literature, dated results, reviewer, re-check cadence) + Doc 15 (workflow/performance framing).
+- **Evidence:** Doc 05 (search method, EUDAMED + vendor + literature, dated results, reviewer, re-check cadence). Doc 15 (viability) is excluded: cost and convenience cannot establish (c).
 - **Trap:** "Arterial is open-source and free" is not a (c) argument. General-purpose CE viewers with adequate performance defeat (c) unless a specific, evidenced gap is shown.
 
 ### (d) Information to competent authority on request

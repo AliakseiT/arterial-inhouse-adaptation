@@ -16,7 +16,7 @@
 | # | Hazard / hazardous situation | Foreseeable harm | Controls (design / protective / information) | Verification |
 |---|---|---|---|---|
 | H1 | False-negative vessels / truncated centerlines relied on in discussion | Delayed or misguided access planning, prolonged procedure | QC completeness gate + fail-stop; provenance display; mandatory overread; input spec enforcement | Local validation completeness metric; usability overread test |
-| H2 | False-positive vessels / artefacts presented as anatomy | Confusion, wrong-side/level discussion | Artefact抑制 via operating-point choice; visual distinction native vs derived; overread | FP review in validation; summative evaluation |
+| H2 | False-positive vessels / artefacts presented as anatomy | Confusion, wrong-side/level discussion | Artefact suppression via operating-point choice; visual distinction native vs derived; overread | FP review in validation; summative evaluation |
 | H3 | Geometric distortion (misregistration, wrong scale/orientation) | Misjudged tortuosity/length | Registration check + orientation/scale assertion; display of source grid; automated fail on mismatch | Integration tests with synthetic transforms |
 | H4 | Silent failure / stale output shown as current | Decisions on wrong patient or outdated result | Per-case provenance binding (StudyInstanceUID hash); no display without fresh QC pass; cache invalidation | Fault-injection tests |
 | H5 | Automation bias under time pressure (overread skipped) | Over-reliance despite disclaimer | Workflow forcing function (overread attestation click); time-pressure summative test; training | Usability report |
