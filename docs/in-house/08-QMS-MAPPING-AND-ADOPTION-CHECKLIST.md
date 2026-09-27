@@ -23,7 +23,7 @@
 | Internal audit | SOP-003 | `[HOSPITAL]` | `[HOSPITAL]` |
 | Training/competence | SOP-011 + training matrix | `[HOSPITAL]` | `[HOSPITAL]` |
 | Information security | SOP-021 (ISO 27001) | `[HOSPITAL]` | `[HOSPITAL]` |
-| Data protection (DICOM/PHI) | SOP-023 (GDPR/nFADP) | `[HOSPITAL: DPIA ref]` | `[HOSPITAL]` |
+| Data protection (DICOM/PHI) | SOP-023 (GDPR) | `[HOSPITAL: DPIA ref]` | `[HOSPITAL]` |
 | AI management (where adopted) | SOP-022 (ISO 42001) | `[HOSPITAL: if applicable]` | `[HOSPITAL]` |
 | Supplier control (GPU/IT, annotation services) | SOP-010 | `[HOSPITAL: supplier list]` | `[HOSPITAL]` |
 | QMS software validation (if QMS tooling used) | SOP-006 | `[HOSPITAL]` | `[HOSPITAL]` |

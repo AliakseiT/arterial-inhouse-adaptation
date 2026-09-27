@@ -10,7 +10,7 @@ Objective: determine, from measured local data, whether continued operation of t
 
 Viability bar, set before data collection and approved by management:
 
-- The device remains viable if, at observed case volume, the mean net annual cost (operating cost minus monetised planning-time savings minus avoided repeat-imaging cost) is at or below `[HOSPITAL: budget threshold, e.g. CHF/EUR amount]` AND no safety signal from Doc 12 monitoring contradicts continued use.
+- The device remains viable if, at observed case volume, the mean net annual cost (operating cost minus monetised planning-time savings minus avoided repeat-imaging cost) is at or below `[HOSPITAL: budget threshold, EUR amount]` AND no safety signal from Doc 12 monitoring contradicts continued use.
 - If the bar is missed, management reviews continuation: narrow further, reduce operating cost, or retire per the Doc 12 change process. Missing the bar never triggers scope widening on economic grounds.
 
 Out of scope: QALY (Quality-Adjusted Life Year) or ICER (Incremental Cost-Effectiveness Ratio) claims, payer reimbursement, cross-hospital generalisation. Those require a full HTA (Health Technology Assessment) dossier, not this analysis.

@@ -8,12 +8,12 @@
 
 | Dimension | Metric (example, hospital to approve) | Floor |
 |---|---|---|
-| Segmentation (local test set, ground truth) | Dice (vessel mask), 95HD | `[HOSPITAL: e.g. Dice ≥ 0.80 mean, ≥ 0.70 p5]` |
+| Segmentation (local test set, ground truth) | Dice and 95HD (vessel mask), plus a topology-aware metric such as clDice, because Dice barely registers a break in a thin vessel | `[HOSPITAL: e.g. Dice ≥ 0.80 mean, ≥ 0.70 p5]` |
 | Centerline completeness | % clinically-relevant segments visualised without gap > `[X]` mm | `[HOSPITAL: ≥ 95%]` |
 | Failure behaviour | QC-gate sensitivity to corrupt/out-of-spec inputs (no silent wrong output) | `[HOSPITAL: 100% fail-stop on fault suite]` |
 | Robustness strata | Performance by scanner/protocol/contrast-phase/age-band | `[HOSPITAL: no stratum > Δ below floor without documented limitation]` |
 | Human factors | Overread-attestation compliance; misinterpretation events | `[HOSPITAL: 100% / zero]` |
-| Latency | CTA-to-display p95 on production node | `[HOSPITAL: e.g. ≤ 15 min, with fallback procedure]` |
+| Latency | CTA-to-display p95 on production node | `[HOSPITAL: e.g. ≤ 5 min, set well below the local median CTA-to-decision time (Doc 15 D1 baseline), otherwise the map arrives after the decision; with fallback procedure]` |
 | Automation | Manual interaction steps (seeds, edits) per case to reach a usable map | `[HOSPITAL: e.g. 0]` |
 
 Floors for completeness, latency, and automation are the performance characteristics of the Doc 05 §3 need, with the same values. The in-house build must meet them here, and the CE candidates are measured against them in §3A.

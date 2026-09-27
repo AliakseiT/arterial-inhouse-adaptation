@@ -20,7 +20,7 @@ Full device definition: [Doc 03](03-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md). Re
 | (a) | No transfer to another legal entity | Doc 02 §2, Doc 14 repo rules | Same-entity use incl. remote viewing; no sharing with other hospitals/vendors |
 | (b) | Manufacture + use under appropriate QMS | Doc 08 mapping + checklist | QMS covers design, build, deployment, use, monitoring |
 | (c) | Target-group need not met at appropriate performance by equivalent CE device | Doc 05 method + evidence | EUDAMED/market search done, documented, periodically repeated |
-| (d) | Information to competent authority on request | Doc 12 §5 authority pack | Owner + 30-day retrieval commitment |
+| (d) | Information to competent authority on request | Doc 12 §5 authority pack | Owner + retrieval target and drill (Doc 07 §8) |
 | (e) | Public declaration (identity + GSPR statement) | Doc 13 template | Published on hospital website, kept current |
 | (f) | Documentation of facility/process/design/performance sufficient for authority review | Doc 07 index + Docs 10-11 | Frozen config + evidence actually exists |
 | (g) | Manufacture per (f) documentation | Doc 12 §2 + Doc 10 release gates | Build-from-source reproducibility, change control |
