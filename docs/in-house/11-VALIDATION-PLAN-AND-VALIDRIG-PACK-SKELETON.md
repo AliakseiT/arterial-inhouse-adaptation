@@ -14,6 +14,9 @@
 | Robustness strata | Performance by scanner/protocol/contrast-phase/age-band | `[HOSPITAL: no stratum > Δ below floor without documented limitation]` |
 | Human factors | Overread-attestation compliance; misinterpretation events | `[HOSPITAL: 100% / zero]` |
 | Latency | CTA-to-display p95 on production node | `[HOSPITAL: e.g. ≤ 15 min, with fallback procedure]` |
+| Automation | Manual interaction steps (seeds, edits) per case to reach a usable map | `[HOSPITAL: e.g. 0]` |
+
+Floors for completeness, latency, and automation are the performance characteristics of the Doc 05 §3 need, with the same values. The in-house build must meet them here, and the CE candidates are measured against them in §3A.
 
 If any floor is missed: no clinical use; either improve (new release candidate) or narrow purpose further.
 
@@ -26,9 +29,19 @@ If any floor is missed: no clinical use; either improve (new release candidate) 
 
 ## 3. Silent / shadow phase (prospective, non-influencing)
 
-- `[HOSPITAL: N consecutive cases, duration]` run in parallel with standard care; output visible only to study team, **never** to treating team, or visible with explicit "validation, do not use" watermark per ethics approval `[HOSPITAL: ethics ref]`.
+- `[HOSPITAL: N consecutive cases, duration]` run in parallel with standard care; output visible only to the study team, **never** to the treating team. A watermarked output shown to treating clinicians would influence care and is not a shadow phase. Ethics approval: `[HOSPITAL: ethics ref]`.
 - Endpoints: technical success rate, QC-flag rate, discordance between device visualisation and final radiology read, time impact, incident count.
 - Stop rules: `[HOSPITAL: e.g. >X% technical failure, any silent wrong-output event, any safety signal → halt + CAPA]`.
+
+## 3A. CE comparator arm (required where Doc 05 claims a performance gap)
+
+Purpose: evidence for Art 5(5)(c). It shows whether available CE-marked candidates meet the Doc 05 §3 need on local data. It can run before the in-house device is built.
+
+- Candidates: each CE device dispositioned in Doc 05 §6 as closest, `[HOSPITAL: name, version, EUDAMED ID]`, used within its IFU (Instructions For Use), by operators trained per the vendor. Access via existing licence, vendor evaluation licence, or vendor-run processing under a DPA (Data Processing Agreement) on de-identified data.
+- Data: the §2 locked test set, or a pre-specified subset sized `[HOSPITAL: N, with rationale]`. Same ground truth, same readers.
+- Measures: the §1 completeness, latency, and automation metrics, recorded per characteristic. Readers blinded to which system produced the map where the display allows.
+- Decision rule, fixed before measurement: a candidate that meets every Doc 05 §3 characteristic is equivalent. (c) fails and the hospital uses or procures that device.
+- Report: per candidate, per characteristic, met or missed with value and confidence interval. Filed as Doc 05 evidence. Vendors may be offered the report for factual correction before filing.
 
 ## 4. validrig pack skeleton (`packs/arterial-visualisation/`)
 
