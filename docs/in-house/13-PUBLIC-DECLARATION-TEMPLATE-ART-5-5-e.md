@@ -14,6 +14,8 @@
 |---|---|
 | In-house device name | `[HOSPITAL: e.g. HOSP-ART-VIZ]` |
 | Internal reference / version | `[HOSPITAL: hosp-vX.Y.Z + build fingerprint]` |
+| Device type | Medical device (MD), medical device software |
+| Risk class of the device (Annex VIII) | `[HOSPITAL: class-equivalent from Doc 04 §2, e.g. IIb, with rule cited]` |
 | Device description | `[In-house CTA vascular visualisation aid, extracranial vessel segmentation + centerlines displayed alongside native CTA; see Doc 03]` |
 | Intended purpose | `[Verbatim approved Doc 03 §2 statement]` |
 | Target patient group | `[Verbatim Doc 05 §1]` |
@@ -30,6 +32,8 @@
 | `[HOSPITAL: any not fully met]` | Partially / No | `[HOSPITAL: reasoned justification + mitigation]` |
 
 **Corrective-action contact:** `[HOSPITAL: function + email/phone]` for clinicians, patients, and the competent authority.
+
+**Date and location:** `[HOSPITAL: YYYY-MM-DD, city]`
 
 **Authorised person:** `[name, role, date, signature]`, `[HOSPITAL: competent authority name]` may request the Art 5(5)(d)/(f) documentation pack (Doc 12 §5).
 

@@ -2,7 +2,7 @@
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: clinical lead + hospital finance liaison + QA. Engine: `AliakseiT/heor-skills` (Health Economics and Outcomes Research skills), deterministic `@heor/engine` for all arithmetic. This analysis never supports the Article 5(5)(c) non-equivalence case in Doc 05. Cost arguments cannot establish non-equivalence. Its sole regulatory-adjacent role is informing the Doc 12 continue-or-retire decision and the Doc 01 resourcing picture.
+> Owner: clinical lead + hospital finance liaison + QA. Engine: `AliakseiT/heor-skills` (Health Economics and Outcomes Research skills), deterministic `@heor/engine` for all arithmetic. This analysis never supports the Article 5(5)(c) non-equivalence case in Doc 05. Cost arguments cannot establish non-equivalence, and MDCG 2023-1 §3.2.3 excludes in-house manufacture for purely economic motives. Its sole regulatory-adjacent role is informing the Doc 12 continue-or-retire decision and the Doc 01 resourcing picture.
 
 ## 1. Objective and viability bar
 

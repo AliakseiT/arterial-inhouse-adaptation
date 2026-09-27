@@ -4,7 +4,7 @@
 >
 > Owner: QA. Principle: the hospital's QMS stays the system of record. This doc maps Art 5(5)/Annex I needs onto it and gives the adoption checklist. QMS-baseline SOP numbers below are a reference model (`AliakseiT/dearauditor-qms-baseline`); replace with `[HOSPITAL: SOP]` equivalents.
 
-## 1. Element mapping (MDCG 2023-1 Table 1 style)
+## 1. Element mapping (MDCG 2023-1 §3.5.1 areas plus MDR Art 10(9))
 
 | Required element (Art 5(5)/Annex I/MDCG) | Reference-model SOP | Hospital equivalent | Gap / action |
 |---|---|---|---|

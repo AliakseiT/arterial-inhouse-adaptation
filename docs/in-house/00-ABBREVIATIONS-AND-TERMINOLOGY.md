@@ -33,7 +33,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | SSP | Summary of Safety and (clinical) Performance | Public summaries for higher-class devices in EUDAMED. Used as a Doc 05 source where available. |
 | In-house device | No short form | A device manufactured and used only within the same EU health institution, meeting all Art 5(5) conditions (MDCG 2023-1 section 3.1). |
 | Health institution | No short form | An organisation whose primary purpose is the care or treatment of patients or the promotion of public health (MDR Art 2(36)). |
-| Non-industrial scale | No short form | Production limited to own-patient need. No commercial-scale manufacturing (Art 5(5) last subparagraph, MDCG section 3.9). |
+| Non-industrial scale | No short form | Production limited to own-patient need. No commercial-scale manufacturing (Art 5(5) last subparagraph, MDCG 2023-1 section 3.11). |
 
 ## Engineering and AI terms
 

@@ -2,7 +2,7 @@
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: hospital regulatory/QA function. Sources: MDR Art 5(5)(a)-(h), MDCG 2023-1 §§3-4 + Annex A.
+> Owner: hospital regulatory/QA function. Sources: MDR Art 5(5)(a)-(h), MDCG 2023-1 §3 + Annex A.
 > This is a strategy note, not advice. Confirm against `[HOSPITAL: Member State]` national implementation.
 
 ## 1. Legal theory in one paragraph
@@ -21,6 +21,8 @@ Second, the adaptation record is manufacturing evidence. The fork log shows the 
 
 Third, local validation closes the loop. Upstream metrics describe other data. Hospital validation (Doc 11) characterises the adapted build on local scanners and protocols. That is the performance data (f) demands and the reason (c) holds: the need is met at appropriate performance only after hospital-specific adaptation, which no off-the-shelf device underwent for this site.
 
+MDCG 2023-1 supports this reading. §3.2.1 counts manufacturing "from an existing device or another type of product" and "modifying an existing device in order to create a new device" as manufacture. §3.2.2 says that where a health institution ascribes a medical intended purpose to a research-use-only product, Article 5(5) applies, and in-house devices may include such products as components. Arterial is research software rather than a labelled research-use-only product, but the same logic applies.
+
 Limits. Adaptation does not excuse any condition. It supports (c), (f), and (g) only where the record is complete: dated fork diffs, reviewed changes, validation on the frozen build. An adaptation without local evidence carries no weight.
 
 ## 2. Condition-by-condition map
@@ -31,14 +33,14 @@ Limits. Adaptation does not excuse any condition. It supports (c), (f), and (g) 
 - **Trap:** teleradiology via an external legal entity, multi-site groups with separate entities, or sharing the fork with another hospital breaks (a).
 
 ### (b) Appropriate QMS
-- **Means:** manufacture + use under a QMS compliant with Art 5(5), relevant Annex I, national law, and applicable ISO standards if certified. MDCG points to MDR Art 10(9) elements as guidance: management responsibility, resource management, design/development, document/record control, traceability, change control, risk, vigilance/CAPA, PMS-like use review.
+- **Means:** manufacture + use under a QMS compliant with Art 5(5), relevant Annex I, national law, and applicable ISO standards if certified. MDCG 2023-1 §3.5.1 says MDR Art 10(9) can serve as guidance and lists example areas: compliance with Art 5(5) and Annex I, management responsibility including resources, risk management, generating and appraising data for the (c) justification, manufacturing documentation, traceability, monitoring and corrective action, and communication with the competent authority. Art 10(9) adds design control, document control, and change control.
 - **Evidence:** Doc 08 mapping table from each element to `[HOSPITAL: SOP reference]`; gaps become CAPAs before clinical use.
 - **Note:** ISO 13485 certification is **not** legally required for (b), but the QMS must be real, documented, and followed. ISO 15189 alone is insufficient for a software device.
 
 ### (c) Non-equivalence to CE devices
 - **Means:** documented justification, **before first manufacture**, that the target group's specific needs cannot be met, or not at appropriate performance, by an equivalent CE device. Technical, biological, or clinical grounds, not price or convenience.
 - **Evidence:** Doc 05 (search method, EUDAMED + vendor + literature, dated results, reviewer, re-check cadence). Doc 15 (viability) is excluded: cost and convenience cannot establish (c).
-- **Trap:** "Arterial is open-source and free" is not a (c) argument. General-purpose CE viewers with adequate performance defeat (c) unless a specific, evidenced gap is shown.
+- **Trap:** "Arterial is open-source and free" is not a (c) argument. MDCG 2023-1 §3.2.3 excludes devices made in-house "purely for economic motives/financial interests, without clinically relevant reasons". General-purpose CE viewers with adequate performance defeat (c) unless a specific, evidenced gap is shown.
 
 ### (d) Information to competent authority on request
 - **Means:** provide manufacture/use info including justification of manufacturing, modification, and use; accept inspections; respect Member-State restrictions/notifications.
