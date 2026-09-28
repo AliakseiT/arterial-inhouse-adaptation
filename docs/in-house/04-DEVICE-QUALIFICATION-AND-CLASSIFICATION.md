@@ -32,12 +32,12 @@ MDCG 2019-11 rev.1 Annex III maps Rule 11a onto the IMDRF (International Medical
 | Serious | Class IIb (III.ii) | Class IIa (II.ii) | Class IIa (I.ii) |
 | Non-serious | Class IIa (II.iii) | Class IIa (I.iii) | Class IIa (I.i) |
 
-Definitions (IMDRF N12 §5.1-5.2, as reproduced in Health Canada's draft SaMD guidance; check the wording against the IMDRF original before relying on it):
+Definitions (IMDRF N12 §5, as reproduced in Health Canada's guidance "Software as a Medical Device (SaMD): Definition and Classification", §2.3.1):
 
 - Treat or diagnose: the information "will be used to take an immediate or near-term action".
-- Drive clinical management: the information "will be used to aid in treatment, aid in diagnosis, to triage or identify early signs of a disease or condition".
+- Drive clinical management: the information "will be used to: triage or identify early signs of a disease or condition that will be used to guide next diagnostics or treatment interventions; aid in diagnosis; aid in treatment". Aid in treatment is "providing enhanced support to safe and effective use of medicinal products or a medical device".
 - Inform clinical management: the information "will not trigger an immediate or near-term action".
-- Critical situation: "Life threatening state of health, including incurable states".
+- Critical situation: accurate or timely action "is vital to avoid death, long-term disability or other serious deterioration of health". The listed criteria include "Life threatening state of health", "Requires major therapeutic interventions", and "Sometimes time critical". Acute stroke meets all three.
 
 ### 2.2 Position for the Doc 03 purpose: Class IIb-equivalent
 
