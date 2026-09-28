@@ -13,7 +13,7 @@
 | Failure behaviour | QC-gate sensitivity to corrupt/out-of-spec inputs (no silent wrong output) | `[HOSPITAL: 100% fail-stop on fault suite]` |
 | Robustness strata | Performance by scanner/protocol/contrast-phase/age-band | `[HOSPITAL: no stratum > Δ below floor without documented limitation]` |
 | Human factors | Overread-attestation compliance; misinterpretation events | `[HOSPITAL: 100% / zero]` |
-| Latency | CTA-to-display p95 on production node | `[HOSPITAL: e.g. ≤ 5 min, set well below the local median CTA-to-decision time (Doc 15 D1 baseline), otherwise the map arrives after the decision; with fallback procedure]` |
+| Latency | CTA-to-display p95 on production node | `[HOSPITAL: e.g. ≤ 5 min, set well below the local median CTA-to-procedure-plan time (Doc 15 D1 baseline), otherwise the map arrives after the plan is made; with fallback procedure]` |
 | Automation | Manual interaction steps (seeds, edits) per case to reach a usable map | `[HOSPITAL: e.g. 0]` |
 
 Floors for completeness, latency, and automation are the performance characteristics of the Doc 05 §3 need, with the same values. The in-house build must meet them here, and the CE candidates are measured against them in §3A.

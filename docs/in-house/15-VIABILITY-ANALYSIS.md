@@ -21,7 +21,7 @@ Collection starts in the Doc 11 shadow phase so that a native-only baseline exis
 
 | # | Field | Definition | Source | Recorded by |
 |---|---|---|---|---|
-| D1 | Planning discussion duration | Minutes from CTA (Computed Tomography Angiography) availability in PACS (Picture Archiving and Communication System) to documented treatment decision | Planning log / EHR (Electronic Health Record) timestamp | Study team, shadow phase; treating team, live phase |
+| D1 | Planning duration | Minutes from CTA (Computed Tomography Angiography) availability in PACS (Picture Archiving and Communication System) to the documented procedure plan (access route and approach). `[HOSPITAL: if the plan is not timestamped, use arterial puncture time instead; choose one endpoint and keep it fixed]` | Planning log / EHR (Electronic Health Record) timestamp | Study team, shadow phase; treating team, live phase |
 | D2 | Repeat CTA | Repeat head-and-neck CTA ordered for the same presentation, yes/no plus reason | Radiology order record | Study team |
 | D3 | Device QC (Quality Control) outcome | Pass, degraded, or suppressed, per Doc 07 provenance spec | Device case log (Doc 12) | Automatic |
 | D4 | Overread discordance | Device visualisation materially disagrees with final radiology read, yes/no | Discordance log (Doc 12) | Reviewing radiologist |
