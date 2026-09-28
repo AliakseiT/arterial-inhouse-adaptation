@@ -2,7 +2,7 @@
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: engineering + QA. Assumed safety class: **B minimum, evaluate C** (Doc 04 §4). If C is confirmed, add segregation, detailed design, and enhanced integration testing beyond this outline.
+> Owner: engineering + QA. Assumed safety class: **B minimum, C expected** (Doc 04 §4: the IIb-equivalent harm model makes C the outcome unless Doc 09 shows controls outside the software reduce its contribution). Plan for C: segregation, detailed design, and enhanced integration testing beyond this outline. Drop to B only on a recorded Doc 09 rationale.
 
 ## 1. Lifecycle model
 
