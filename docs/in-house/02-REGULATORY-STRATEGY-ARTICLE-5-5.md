@@ -101,7 +101,7 @@ High-risk test, Article 6(2) and Annex III. Annex III point 5(d) lists emergency
 
 Obligations that apply anyway:
 
-- AI literacy (Article 4, applicable since 2 February 2025): staff who operate or use the system have sufficient AI literacy. The Omnibus softened this duty; check the consolidated wording. Doc 08 section 4 training covers it.
+- AI literacy (Article 4, applicable since 2 February 2025): staff who operate or use the system have sufficient AI literacy. The Omnibus proposal would soften this duty; check whether and how the adopted Regulation (EU) 2026/1744 changed it. Doc 08 section 4 training covers it.
 - Transparency (Article 50) targets systems that interact with people or generate synthetic content. A segmentation overlay is analysis of a real scan, not generated content. The provenance label (Doc 03 claim 2) marks every map as device output regardless.
 
 Limits of this reading. The Article 6(1)(b) argument is the common reading, not settled case law. A competent authority or counsel may take a different view. The Omnibus also empowers the Commission to limit AI Act requirements where sectoral law already imposes equivalent obligations; later implementing acts may change the picture. If the device were ever CE-marked through a notified body, it would be high-risk under Article 6(1) from 2 August 2028. Record: `[HOSPITAL: AI Act position, counsel reviewer, date]`.
