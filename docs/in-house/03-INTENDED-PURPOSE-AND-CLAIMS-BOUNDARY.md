@@ -8,12 +8,12 @@
 
 - In-house device name: `[HOSPITAL: e.g. HOSP-ART-VIZ]`
 - Version: `[HOSPITAL: frozen fork tag, e.g. 1.0.0+hosp1]`
-- Upstream basis: `FLOWCAT-CV/arterial` commit `[HOSPITAL: pinned commit SHA]` + hospital diff `[HOSPITAL: fork commit SHA]`, tag `v2.1`-derived.
+- Upstream basis: `FLOWCAT-CV/arterial` commit `[HOSPITAL: pinned commit SHA]` + hospital diff `[HOSPITAL: fork commit SHA]`, upstream version 2.1 (`setup.py`; upstream publishes no release tags).
 - Legal manufacturer/user: `[HOSPITAL: single legal entity name + address]`, same entity for manufacture and use.
 
 ## 2. What the device does, in plain words
 
-A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (Computed Tomography Angiography), a scan that shows the blood vessels. The device takes that scan and draws two extra pictures next to it: the vessels as a 3D shape, and the center lines running through them, like a map of the road network the catheter must travel. The physician looks at these pictures side by side with the original scan while discussing whether and how to remove the clot. The pictures add nothing the scan does not contain. They only make the vessel course easier to see and talk about.
+A patient arrives with a suspected stroke. The team takes a head-and-neck CTA (Computed Tomography Angiography), a scan that shows the blood vessels. The device takes that scan and draws two extra pictures next to it: the vessels as a 3D shape, and the center lines running through them, like a map of the road network the catheter must travel. The decision to treat is taken from the original scan and the clinical picture. Once it is taken, the physician looks at these pictures side by side with the original scan while planning how to reach and remove the clot. The pictures add nothing the scan does not contain. They only make the vessel course easier to see and talk about.
 
 Summary: a map display, a version label identifying the software that produced it, and an explicit failure state where no map can be drawn. The formal statement follows.
 
@@ -52,7 +52,7 @@ Upstream modules `access_prediction`, `feature_extraction` quantitative outputs,
 
 ## 6. System boundary
 
-- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Docs 06/06/09).
+- In-house device = frozen fork + frozen weights + deployment config + clinician-facing instructions (Doc 07 §7).
 - NOT part of device: PACS, hospital network, upstream repo, training workstations, research notebooks.
 - Interfaces treated as SOUP/external: nnU-Net, MONAI, VMTK, PyTorch Geometric, TotalSegmentator mandible model (Apache-2.0), CUDA/drivers, listed in SBOM (Doc 10).
 

@@ -2,7 +2,7 @@
 
 > First-time reader: terms are spelled out on first use. Full list: `00-ABBREVIATIONS-AND-TERMINOLOGY.md`.
 >
-> Owner: clinical lead + hospital finance liaison + QA. Engine: `AliakseiT/heor-skills` (Health Economics and Outcomes Research skills), deterministic `@heor/engine` for all arithmetic. This analysis never supports the Article 5(5)(c) non-equivalence case in Doc 05. Cost arguments cannot establish non-equivalence. Its sole regulatory-adjacent role is informing the Doc 12 continue-or-retire decision and the Doc 01 resourcing picture.
+> Owner: clinical lead + hospital finance liaison + QA. Engine: `AliakseiT/heor-skills` (Health Economics and Outcomes Research skills), deterministic `@heor/engine` for all arithmetic. This analysis never supports the Article 5(5)(c) non-equivalence case in Doc 05. Cost arguments cannot establish non-equivalence, and MDCG 2023-1 §3.2.3 excludes in-house manufacture for purely economic motives. Its sole regulatory-adjacent role is informing the Doc 12 continue-or-retire decision and the Doc 01 resourcing picture.
 
 ## 1. Objective and viability bar
 
@@ -10,7 +10,7 @@ Objective: determine, from measured local data, whether continued operation of t
 
 Viability bar, set before data collection and approved by management:
 
-- The device remains viable if, at observed case volume, the mean net annual cost (operating cost minus monetised planning-time savings minus avoided repeat-imaging cost) is at or below `[HOSPITAL: budget threshold, e.g. CHF/EUR amount]` AND no safety signal from Doc 12 monitoring contradicts continued use.
+- The device remains viable if, at observed case volume, the mean net annual cost (operating cost minus monetised planning-time savings minus avoided repeat-imaging cost) is at or below `[HOSPITAL: budget threshold, EUR amount]` AND no safety signal from Doc 12 monitoring contradicts continued use.
 - If the bar is missed, management reviews continuation: narrow further, reduce operating cost, or retire per the Doc 12 change process. Missing the bar never triggers scope widening on economic grounds.
 
 Out of scope: QALY (Quality-Adjusted Life Year) or ICER (Incremental Cost-Effectiveness Ratio) claims, payer reimbursement, cross-hospital generalisation. Those require a full HTA (Health Technology Assessment) dossier, not this analysis.
@@ -21,7 +21,7 @@ Collection starts in the Doc 11 shadow phase so that a native-only baseline exis
 
 | # | Field | Definition | Source | Recorded by |
 |---|---|---|---|---|
-| D1 | Planning discussion duration | Minutes from CTA (Computed Tomography Angiography) availability in PACS (Picture Archiving and Communication System) to documented treatment decision | Planning log / EHR (Electronic Health Record) timestamp | Study team, shadow phase; treating team, live phase |
+| D1 | Planning duration | Minutes from CTA (Computed Tomography Angiography) availability in PACS (Picture Archiving and Communication System) to the documented procedure plan (access route and approach). `[HOSPITAL: if the plan is not timestamped, use arterial puncture time instead; choose one endpoint and keep it fixed]` | Planning log / EHR (Electronic Health Record) timestamp | Study team, shadow phase; treating team, live phase |
 | D2 | Repeat CTA | Repeat head-and-neck CTA ordered for the same presentation, yes/no plus reason | Radiology order record | Study team |
 | D3 | Device QC (Quality Control) outcome | Pass, degraded, or suppressed, per Doc 07 provenance spec | Device case log (Doc 12) | Automatic |
 | D4 | Overread discordance | Device visualisation materially disagrees with final radiology read, yes/no | Discordance log (Doc 12) | Reviewing radiologist |

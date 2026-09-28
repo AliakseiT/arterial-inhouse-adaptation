@@ -19,8 +19,8 @@ Full device definition: [Doc 03](03-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md). Re
 |---|---|---|---|
 | (a) | No transfer to another legal entity | Doc 02 §2, Doc 14 repo rules | Same-entity use incl. remote viewing; no sharing with other hospitals/vendors |
 | (b) | Manufacture + use under appropriate QMS | Doc 08 mapping + checklist | QMS covers design, build, deployment, use, monitoring |
-| (c) | Target-group need not met at appropriate performance by equivalent CE device | Doc 05 method + Doc 15 HEOR outline | EUDAMED/market search done, documented, periodically repeated |
-| (d) | Information to competent authority on request | Doc 12 §5 authority pack | Owner + 30-day retrieval commitment |
+| (c) | Target-group need not met at appropriate performance by equivalent CE device | Doc 05 method + evidence | EUDAMED/market search done, documented, periodically repeated |
+| (d) | Information to competent authority on request | Doc 12 §5 authority pack | Owner + retrieval target and drill (Doc 07 §8) |
 | (e) | Public declaration (identity + GSPR statement) | Doc 13 template | Published on hospital website, kept current |
 | (f) | Documentation of facility/process/design/performance sufficient for authority review | Doc 07 index + Docs 10-11 | Frozen config + evidence actually exists |
 | (g) | Manufacture per (f) documentation | Doc 12 §2 + Doc 10 release gates | Build-from-source reproducibility, change control |
@@ -34,7 +34,7 @@ Failure of any one condition collapses the exemption. Fallbacks: CE-marked devic
 
 Section 1 describes a deliberately small claim set: a map display, a version label, and an explicit failure state (Doc 03). The reasons for this scope are as follows.
 
-Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Each of those outputs would raise the device into a higher risk class, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and grounds non-equivalence in workflow fit plus local performance rather than novelty.
+Even the narrow scope is Class IIb-equivalent: stroke is a critical situation and the map is used in near-term treatment planning (Doc 04 §2). Full Arterial can do more: predict access difficulty, score tortuosity, label vessels by name. Showing those outputs would push the device toward Class III-equivalent, demand deeper clinical evidence, and collide with existing CE-marked planning viewers, which weakens the Article 5(5)(c) non-equivalence case. The small scope keeps the physician as the sole decision-maker, keeps the hardest-to-prove model (access prediction) off the clinical screen, and leaves one ground for non-equivalence: measured performance on local data against a need fixed in advance (Doc 05 §3). Where a CE-marked advanced-visualisation platform already meets that need, the right answer is NO-GO (Doc 05 §2).
 
 Widening scope later = new intended purpose = repeat Docs 04-06, 08-10.
 
@@ -43,7 +43,7 @@ Widening scope later = new intended purpose = repeat Docs 04-06, 08-10.
 - Regulatory/QA: 6-12 weeks part-time for Docs 04-08 + declaration, assuming QMS exists.
 - Engineering: freeze fork, SBOM, air-gapped packaging, DICOM/NIfTI pipeline hardening, UI read-only viewer integration, logging, typically larger than regulatory work.
 - Validation: retrospective CTA set with ground-truth segmentations + prospective silent/shadow phase; validrig pack (Doc 11) structures this but does not replace radiologist overread studies.
-- Ongoing: per-case logging, quarterly use review, annual non-equivalence re-check, re-validation on any model/data/pipeline change.
+- Ongoing: per-case logging, periodic use review (Doc 12 cadence), annual non-equivalence re-check, re-validation on any model/data/pipeline change.
 
 If the hospital cannot staff a device owner, a clinical lead, and QA oversight for the device lifetime, answer is NO-GO.
 

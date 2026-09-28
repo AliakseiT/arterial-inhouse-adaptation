@@ -14,7 +14,7 @@ Only released tags deployed; installation qualification per node; deployment log
 
 ## 3. Routine review cadence
 
-What the law actually demands here is thin but firm. Article 5(5)(g) requires manufacture per the filed documentation. Article 5(5)(h) requires review of experience from clinical use plus all necessary corrective actions. Annex I section 3 requires risk management as a continuous process with systematic updating. MDCG 2023-1 adds that the Quality Management System must cover vigilance, corrective and preventive action (CAPA), and change control. None of these set a calendar. No quarterly or annual frequency appears in the text. The hospital sets a proportionate cadence and defends it. The named roles are required in substance, a device-responsible person, clinical oversight, QA oversight, because without them (g) and (h) cannot be performed. Titles may follow hospital usage.
+What the law actually demands here is thin but firm. Article 5(5)(g) requires manufacture per the filed documentation. Article 5(5)(h) requires review of experience from clinical use plus all necessary corrective actions. Annex I section 3 requires risk management as a continuous process with systematic updating. MDCG 2023-1 adds three things: the Quality Management System covers monitoring, analysis, and continuous improvement (§3.5.1); a documented procedure collects clinical and performance data and processes incidents and corrective actions (§3.10); critical changes are evaluated and documented (§3.3). None of these set a calendar. No quarterly or annual frequency appears in the text. The hospital sets a proportionate cadence and defends it. The named roles are required in substance, a device-responsible person, clinical oversight, QA oversight, because without them (g) and (h) cannot be performed. Titles may follow hospital usage.
 
 Relaxed minimum for pathfinder adoption:
 
@@ -28,7 +28,7 @@ Relaxed minimum for pathfinder adoption:
 ## 4. Discordance and incident handling
 
 - Discordance definition: `[HOSPITAL: e.g. device visualisation materially disagrees with final radiology read, or QC flag disputed]`. Log all; sample-review even when overread "caught" the issue, near-misses count.
-- Incident: any use that caused or could cause harm → hospital incident system + national in-house reporting route `[HOSPITAL: authority + timeline]` + risk-file update + CAPA. Do not wait for quarterly review.
+- Incident: any use that caused or could cause harm → hospital incident system + national in-house reporting route `[HOSPITAL: authority + timeline]` + risk-file update + CAPA. Do not wait for the scheduled review.
 - Corrective action scale: advisory notice to users → temporary suspension → version recall/rollback → purpose narrowing → retirement. Each has a pre-assigned decision-maker `[HOSPITAL: names/roles]`.
 
 ## 5. Authority pack (Art 5(5)(d) readiness)

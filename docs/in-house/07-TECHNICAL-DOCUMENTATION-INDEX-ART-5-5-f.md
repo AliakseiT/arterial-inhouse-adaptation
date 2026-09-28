@@ -9,7 +9,7 @@
 | Item | Value |
 |---|---|
 | In-house device ID | `[HOSPITAL: HOSP-ART-VIZ + version]` |
-| Upstream basis | `FLOWCAT-CV/arterial` commit `[SHA]`, tag `v2.1`-derived; hospital fork commit `[SHA]` |
+| Upstream basis | `FLOWCAT-CV/arterial` commit `[SHA]`, upstream version 2.1 (`setup.py`, no upstream release tag); hospital fork commit `[SHA]` |
 | Model weights | `[per-model version + SHA256 + source (Zenodo DOI 10.5281/zenodo.22694951 or hospital-retrained) + licence]` |
 | Build fingerprint | `[HOSPITAL: reproducible-build hash, builder identity, date]` |
 | Status | `[DRAFT / FROZEN / DEPLOYED / RETIRED]` |
@@ -23,7 +23,7 @@
 
 ## 3. Manufacturing process
 
-1. Fork + freeze (Doc 14) → 2. Dependency pin + SBOM (Doc 10) → 3. Hospital hardening diff (DICOM intake, QC gates, viewer integration, access-prediction disablement) → 4. Verification (unit/integration, build reproducibility) → 5. Validation on local data (Doc 11) → 6. Risk/usability sign-off (Docs 09/09) → 7. Release decision → 8. Controlled deployment + installation qualification → 9. Training → 10. Clinical-use monitoring (Doc 12).
+1. Fork + freeze (Doc 14) → 2. Dependency pin + SBOM (Doc 10) → 3. Hospital hardening diff (DICOM intake, QC gates, viewer integration, access-prediction disablement) → 4. Verification (unit/integration, build reproducibility) → 5. Validation on local data (Doc 11) → 6. Risk/usability sign-off (Doc 09 + usability file, Doc 10 §4) → 7. Release decision → 8. Controlled deployment + installation qualification → 9. Training → 10. Clinical-use monitoring (Doc 12).
 - Process records: `[HOSPITAL: QMS change/build/release record refs]`
 - Nonconforming builds: quarantine procedure `[HOSPITAL: SOP ref]`; no clinical deployment of unreleased builds.
 

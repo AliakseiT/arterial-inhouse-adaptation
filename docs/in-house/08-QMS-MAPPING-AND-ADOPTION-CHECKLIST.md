@@ -4,7 +4,7 @@
 >
 > Owner: QA. Principle: the hospital's QMS stays the system of record. This doc maps Art 5(5)/Annex I needs onto it and gives the adoption checklist. QMS-baseline SOP numbers below are a reference model (`AliakseiT/dearauditor-qms-baseline`); replace with `[HOSPITAL: SOP]` equivalents.
 
-## 1. Element mapping (MDCG 2023-1 Table 1 style)
+## 1. Element mapping (MDCG 2023-1 §3.5.1 areas plus MDR Art 10(9))
 
 | Required element (Art 5(5)/Annex I/MDCG) | Reference-model SOP | Hospital equivalent | Gap / action |
 |---|---|---|---|
@@ -23,7 +23,7 @@
 | Internal audit | SOP-003 | `[HOSPITAL]` | `[HOSPITAL]` |
 | Training/competence | SOP-011 + training matrix | `[HOSPITAL]` | `[HOSPITAL]` |
 | Information security | SOP-021 (ISO 27001) | `[HOSPITAL]` | `[HOSPITAL]` |
-| Data protection (DICOM/PHI) | SOP-023 (GDPR/nFADP) | `[HOSPITAL: DPIA ref]` | `[HOSPITAL]` |
+| Data protection (DICOM/PHI) | SOP-023 (GDPR) | `[HOSPITAL: DPIA ref]` | `[HOSPITAL]` |
 | AI management (where adopted) | SOP-022 (ISO 42001) | `[HOSPITAL: if applicable]` | `[HOSPITAL]` |
 | Supplier control (GPU/IT, annotation services) | SOP-010 | `[HOSPITAL: supplier list]` | `[HOSPITAL]` |
 | QMS software validation (if QMS tooling used) | SOP-006 | `[HOSPITAL]` | `[HOSPITAL]` |
@@ -33,17 +33,17 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 ## 2. Hospital adoption checklist (complete in order; record evidence ref + date + signer per line)
 
 ### Phase A, Decide (no engineering beyond de-identified feasibility)
-- [ ] A1. National law check (Doc 02 §4) signed. `[ref/date/signer]`
+- [ ] A1. National law check (Doc 02 §5) signed. `[ref/date/signer]`
 - [ ] A2. Same-legal-entity + non-industrial-scale confirmation signed. `[…]`
 - [ ] A3. Doc 03 narrow purpose approved by clinical lead + QA. `[…]`
 - [ ] A4. Doc 04 qualification/classification-equivalent recorded. `[…]`
-- [ ] A5. Doc 05 non-equivalence search + determination signed **before build**. `[…]`
-- [ ] A6. Licence clearance to fork/deploy internally (Doc 14) + private-repo created. `[…]`
+- [ ] A5. Doc 05 performance need fixed, search done, CE comparator arm run where a performance gap is claimed (Doc 11 §3A), determination signed **before build**. `[…]`
+- [ ] A6. Noncommercial licence scope confirmed for this hospital (Doc 14 §1, §3) + private fork repository created. `[…]`
 - [ ] A7. Device owner, clinical lead, QA oversight named; resourcing for lifetime committed. `[…]`
 - [ ] A8. GO decision (Doc 01 §5) recorded. `[…]`
 
 ### Phase B, Build under QMS
-- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Docs 07/09). `[…]`
+- [ ] B1. Upstream commit pinned; fork frozen; build env locked (Doc 07 §2, Doc 10 §2). `[…]`
 - [ ] B2. SBOM + SOUP risk + CVE review filed. `[…]`
 - [ ] B3. Access-prediction/quantitative outputs disabled + verified (Doc 03 §4 proof test). `[…]`
 - [ ] B4. DICOM→NIfTI intake, QC gates, fail-stop, provenance logging implemented. `[…]`
@@ -54,7 +54,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 ### Phase C, Validate, approve, declare
 - [ ] C1. Local validation per Doc 11 executed; acceptance criteria met; report approved. `[…]`
 - [ ] C2. Usability summative (overread compliance under time pressure) passed. `[…]`
-- [ ] C3. Residual benefit-risk accepted (Docs 06/08). `[…]`
+- [ ] C3. Residual benefit-risk accepted (Docs 06/09). `[…]`
 - [ ] C4. Release decision + installation qualification signed. `[…]`
 - [ ] C5. Training completed and recorded (role matrix). `[…]`
 - [ ] C6. Public declaration published (Doc 13) + version linked to frozen build. `[…]`
@@ -66,7 +66,7 @@ All gaps → actions with owners/dates before clinical use. Uncertified QMS is a
 - [ ] D3. Any change → change control + re-validation assessment before deployment. `[…]`
 - [ ] D4. Retirement/decommissioning plan on file. `[…]`
 
-## 4. Worked example (fictional, do not copy verbatim)
+## 3. Worked example (fictional, do not copy verbatim)
 
 Normative mapping above stays blank until the hospital completes it. The example below shows one fictional hospital filling two rows, only to show the shape of done.
 
@@ -77,11 +77,11 @@ Normative mapping above stays blank until the hospital completes it. The example
 
 Numbers above are invented. Your rows must point at your system, your versions, your records. An auditor who finds copied SOP numbers finds a gap.
 
-## 3. Training roles (minimum)
+## 4. Training roles (minimum)
 
 | Role | Needs device training | Content |
 |---|---|---|
-| Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting |
+| Interventionalists / neuroradiologists / stroke neurologists (users) | Yes | Purpose/limits, overread duty, failure states, incident reporting, AI literacy (how the model fails, automation bias; AI Act Art 4) |
 | Radiographers / PACS operators | Yes (handling) | Input spec, rejection handling, provenance check |
 | Clinical engineering / IT | Yes | Deployment, monitoring, rollback, backup |
 | QA/regulatory | Yes | Docs 03-13, authority interface |

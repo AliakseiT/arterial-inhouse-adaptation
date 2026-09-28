@@ -19,6 +19,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | Short | Full | Plain meaning |
 |---|---|---|
 | MDR | Medical Device Regulation (EU) 2017/745 | The EU law. Article 5(5) is the narrow exemption this package relies on. |
+| AI Act | Regulation (EU) 2024/1689 on artificial intelligence, amended by Regulation (EU) 2026/1744 | Separate EU law for AI systems. Doc 02 section 6 explains why this device is not high-risk under it. |
 | IVDR | In Vitro Diagnostic Regulation (EU) 2017/746 | The sister law for lab tests. Referenced only to avoid confusion. Not used here. |
 | Art 5(5)(a)-(h) | Article 5, paragraph 5, conditions (a) through (h) | Eight conditions that must all hold. Fail one, lose the exemption. Doc 02 maps each. |
 | GSPR | General Safety and Performance Requirements (MDR Annex I) | The safety and performance rules that still apply even under the exemption. Doc 06 checks each one. |
@@ -33,7 +34,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | SSP | Summary of Safety and (clinical) Performance | Public summaries for higher-class devices in EUDAMED. Used as a Doc 05 source where available. |
 | In-house device | No short form | A device manufactured and used only within the same EU health institution, meeting all Art 5(5) conditions (MDCG 2023-1 section 3.1). |
 | Health institution | No short form | An organisation whose primary purpose is the care or treatment of patients or the promotion of public health (MDR Art 2(36)). |
-| Non-industrial scale | No short form | Production limited to own-patient need. No commercial-scale manufacturing (Art 5(5) last subparagraph, MDCG section 3.9). |
+| Non-industrial scale | No short form | Production limited to own-patient need. No commercial-scale manufacturing (Art 5(5) last subparagraph, MDCG 2023-1 section 3.11). |
 
 ## Engineering and AI terms
 
@@ -68,7 +69,9 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 
 - MDR (EU) 2017/745, Art 2(1), 2(36), 5(5), 10(9), Annex I, Annex VIII Rule 11, Annex XIII (custom-made, contrast only).
 - MDCG 2023-1 (Jan 2023): health-institution exemption guidance with the Annex A declaration model.
-- MDCG 2019-11: Medical Device Software qualification and classification.
+- MDCG 2019-11 rev.1 (June 2025): Medical Device Software qualification and classification, Annex III Rule 11 table, Annex IV examples.
+- IMDRF/SaMD WG/N12FINAL:2014: Software as a Medical Device risk categorisation framework (International Medical Device Regulators Forum).
+- AI Act: Regulation (EU) 2024/1689, Art 3, 4, 6, 50, Annex III point 5(d); Digital Omnibus on AI, Regulation (EU) 2026/1744 (in force 2026-07-27).
 - ISO 14971 (risk), IEC 62304 plus IEC 82304-1 (software lifecycle and health software), IEC 62366-1 (usability), ISO 13485 and 15189 (Quality Management System context), ISO/IEC 27001 plus 42001 (security and AI management).
 - Upstream: `FLOWCAT-CV/arterial` v2.1 (PolyForm NC 1.0.0), Zenodo `10.5281/zenodo.22694951` (CC BY-NC 4.0, Creative Commons Attribution NonCommercial), TotalSegmentator Apache-2.0 sub-model; Canals 2023, Wasserthal 2023, Beyer 2026, Isensee 2021.
 - Hospital-agnostic Quality Management System model: `AliakseiT/dearauditor-qms-baseline` (SOP and work-instruction record templates, mapped, not vendored).
@@ -78,7 +81,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 ## Version pins used while drafting
 
 - Upstream Arterial: `v2.1`, Python 3.11, torch 2.6.0 with CUDA 12.4 (Linux GPU), VMTK via conda-forge, model record `22694951`.
-- This package: `v0.2.0-DRAFT`, `2026-09-20`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
+- This package: `v0.3.0-DRAFT`, `2026-09-28`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).
