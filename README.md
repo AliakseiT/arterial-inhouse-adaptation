@@ -44,7 +44,7 @@ If in doubt, return here:
 | Can we use Article 5(5) at all | [Doc 02](docs/in-house/02-REGULATORY-STRATEGY-ARTICLE-5-5.md), conditions (a)-(h) plus national check |
 | Does the EU AI Act apply | [Doc 02 section 6](docs/in-house/02-REGULATORY-STRATEGY-ARTICLE-5-5.md#6-eu-ai-act-scoping), not high-risk on the Art 6(1) reading, literacy duty applies |
 | What exactly are we claiming | [Doc 03](docs/in-house/03-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md), purpose plus firewall |
-| Why this class and safety class | [Doc 04](docs/in-house/04-DEVICE-QUALIFICATION-AND-CLASSIFICATION.md), IIb-equivalent under MDCG 2019-11 rev.1, why not III, plus B-evaluate-C explainer |
+| Why this class and safety class | [Doc 04](docs/in-house/04-DEVICE-QUALIFICATION-AND-CLASSIFICATION.md), IIb-equivalent under MDCG 2019-11 rev.1, why not III, plus the IEC 62304 safety class (C expected) |
 | Whether an equivalent device exists | [Doc 05](docs/in-house/05-NON-EQUIVALENCE-JUSTIFICATION.md), likely equivalent, fixed performance need, search, determination |
 | What safety rules still apply | [Doc 06](docs/in-house/06-GSPR-APPLICABILITY-CHECKLIST.md), requirement by requirement |
 | Where the evidence lives | [Doc 07](docs/in-house/07-TECHNICAL-DOCUMENTATION-INDEX-ART-5-5-f.md), facility, process, design, performance |
