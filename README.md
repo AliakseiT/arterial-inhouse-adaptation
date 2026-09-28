@@ -14,7 +14,7 @@ This package helps a hospital decide, under its own QMS, whether and how to fork
 
 Narrow in-house purpose adopted here (see [Doc 03](docs/in-house/03-INTENDED-PURPOSE-AND-CLAIMS-BOUNDARY.md)):
 
-> In-house CTA vascular visualisation aid: 3D vessel segmentation plus centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support, not drive, thrombectomy (mechanical clot removal) planning discussion. Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
+> In-house CTA vascular visualisation aid: 3D vessel segmentation plus centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support thrombectomy (mechanical clot removal) planning discussion. The physician decides; the map aids planning, which Doc 04 classes as driving clinical management (IIb-equivalent). Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
 
 Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are out of scope for the initial claim. Adding them later is a design change requiring re-validation and re-justification.
 
