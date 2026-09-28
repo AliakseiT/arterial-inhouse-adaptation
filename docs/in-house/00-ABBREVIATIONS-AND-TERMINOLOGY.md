@@ -82,7 +82,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 ## Version pins used while drafting
 
 - Upstream Arterial: `v2.1`, Python 3.11, torch 2.6.0 with CUDA 12.4 (Linux GPU), VMTK via conda-forge, model record `22694951`.
-- This package: `v0.3.0-DRAFT`, `2026-09-28`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
+- This package: `v0.4.0-DRAFT`, `2026-09-28`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

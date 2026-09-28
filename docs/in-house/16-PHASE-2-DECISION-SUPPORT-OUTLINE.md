@@ -29,7 +29,7 @@ Two sources. Neither validates the hospital build on its own; only Doc 11-style 
 ### 3.1 Published data
 
 - Upstream publications and the ArterialGNet repository (`perecanals/arterial_gnet`): model design, training cohort, reported performance. `[HOSPITAL: list the papers and figures relied on, with DOI]`.
-- The training target. Upstream documentation describes the output as "0 = easy, 1 = difficult" but does not define difficult access. `[VERIFY with upstream: definition of the difficult-access label, e.g. failed route, conversion, catheterisation time threshold, operator rating; cohort size and site]`. Local ground truth (§4.2) must measure the same thing, or the hospital must state how the two differ.
+- The training target. The Arterial module documentation describes the output as "0 = easy, 1 = difficult" without defining difficult access. The ArterialGNet training code (`perecanals/arterial_gnet`, read 2026-09-28) derives the label from a procedural timing variable, `T1A`, in minutes, and imputes missing values as long times. It trains on cases before 2023 and tests on a 2023 set, which is a temporal split. `[VERIFY with upstream: what T1A measures, the threshold that makes a case difficult, how failed access is coded, cohort size and sites]`. Local ground truth (§4.2) must measure the same thing, or the hospital must state how the two differ.
 - Independent literature on access difficulty and route conversion in thrombectomy, to set a realistic local event rate and a clinically meaningful performance bar. `[HOSPITAL]`.
 - The upstream uncertainty band is the spread across five cross-validation folds. It is not a calibrated probability interval. Calibration is established locally (§4.3).
 
@@ -39,8 +39,8 @@ Published figures set expectations. They do not replace the local measurements i
 
 Phase 1 produces three things Phase 2 needs:
 
-- A consecutive local CTA archive, processed by a frozen and validated segmentation and centerline pipeline, with QC (Quality Control) outcomes logged (Doc 12 §1).
-- A measured safety and reliability record for that pipeline, on which the access model depends (Doc 12, Doc 11 §3).
+- A consecutive local CTA archive of eligible cases, with QC (Quality Control) outcomes logged (Doc 12 §1).
+- A measured safety and reliability record for the segmentation and centerline stages (Doc 12, Doc 11 §3). The access model also depends on vessel labelling and feature extraction, which Phase 1 does not validate. Those stages get their own verification in Phase 2.
 - Procedure outcomes for the same patients, collected under §4.
 
 ## 4. Offline outcome study during Phase 1
@@ -53,7 +53,7 @@ The access model runs **offline, retrospectively, on closed cases, in a research
 - Nobody treating the patient can see a prediction, because none exists until after the procedure.
 - Outcomes are only known after the procedure anyway, so nothing is lost by running later.
 
-Inputs are the Phase 1 segmentation and centerline outputs, or a re-run of the same frozen pipeline on archived CTA, in `[HOSPITAL: research enclave]`. Access model version and weight hashes are pinned and logged per run, as for the device.
+Input is a re-run of the frozen pipeline on archived CTA in `[HOSPITAL: research enclave]`, including the vessel labelling and feature extraction stages the access model needs. Phase 1 does not keep segmentations (Doc 12 logs metadata only), so nothing is reused from the clinical build except the pinned versions. Access model version and weight hashes are pinned and logged per run, as for the device.
 
 ### 4.2 Outcome fields (per eligible case)
 
@@ -87,7 +87,7 @@ Signed by clinical lead, regulatory, and QA before the first offline run. Values
 | Discrimination | §4.3 | `[HOSPITAL: e.g. lower 95% CI bound of AUC ≥ X]` |
 | Calibration | §4.3 | `[HOSPITAL: e.g. slope within [a, b]; recalibration allowed only on development data, never on the test set]` |
 | Clinical need | Local rate of P3/P5 and P4 distribution | `[HOSPITAL: e.g. conversion rate ≥ Y% or access time p90 ≥ Z min]`. No need, no Phase 2. |
-| Phase 1 track record | Doc 12 reviews, Doc 11 shadow results | No open safety CAPA; QC suppression rate within `[HOSPITAL]` |
+| Phase 1 track record | Doc 12 reviews, Doc 11 shadow results (segmentation and centerline stages only) | No open safety CAPA; QC suppression rate within `[HOSPITAL]` |
 | Published support | §3.1 | Label definition confirmed; no published signal contradicting local results |
 | Market check for (c) | Fresh Doc 05 search for access-prediction and route-planning devices | Search completed and filed. A CE device that meets the need ends Phase 2. |
 | Resourcing | Doc 01 §4 at III depth | Named owner, clinical lead, QA, and budget for an external or temporally separated validation cohort |
@@ -116,7 +116,7 @@ Where it matters is in making the evidence above obtainable and checkable:
 
 Limits to state alongside:
 
-- The code and weights are open. The upstream training data and the difficult-access label are not fully documented (§3.1). Transparency of the model is not transparency of its training.
+- The code and weights are open; the training data are not, and the label definition needs confirming with upstream (§3.1). Transparency of the model is not transparency of its training.
 - The licence is noncommercial (Doc 14 §1).
 - Openness does not lower any evidence bar. It makes the bar reachable for a single hospital.
 
