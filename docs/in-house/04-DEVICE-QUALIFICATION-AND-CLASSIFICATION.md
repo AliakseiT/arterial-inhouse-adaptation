@@ -32,7 +32,7 @@ MDCG 2019-11 rev.1 Annex III maps Rule 11a onto the IMDRF (International Medical
 | Serious | Class IIb (III.ii) | Class IIa (II.ii) | Class IIa (I.ii) |
 | Non-serious | Class IIa (II.iii) | Class IIa (I.iii) | Class IIa (I.i) |
 
-Definitions (IMDRF N12 §5.1-5.2, as reproduced in Health Canada's SaMD guidance):
+Definitions (IMDRF N12 §5.1-5.2, as reproduced in Health Canada's draft SaMD guidance; check the wording against the IMDRF original before relying on it):
 
 - Treat or diagnose: the information "will be used to take an immediate or near-term action".
 - Drive clinical management: the information "will be used to aid in treatment, aid in diagnosis, to triage or identify early signs of a disease or condition".
@@ -51,7 +51,7 @@ Critical plus drives gives Class IIb (IMDRF III.i). Rule 11's own text leads to 
 
 MDCG 2019-11 rev.1 Annex IV gives the nearest example: "MDSW intended to perform diagnosis by means of image analysis for making treatment decisions in patients with acute stroke should be classified as class III", because the situation is critical and the significance is "treat or diagnose".
 
-The Doc 03 device differs on the significance axis, not on severity. It does not detect or diagnose the occlusion. It does not select patients for thrombectomy. It does not recommend an access route or device. The decision to treat is taken from the source CTA and clinical assessment before the map matters. The map is a display of anatomy already present in the CTA, under mandatory overread.
+The Doc 03 device differs on the significance axis, not on severity. It does not detect or diagnose the occlusion. It does not select patients for thrombectomy. It does not recommend an access route or device. The decision to treat is taken from the source CTA and clinical assessment before the map matters. The treatment itself is also planned and carried out on the source CTA, angiography, and clinical judgement. The map aids that action, which is the drive-level "aid in treatment"; it is not the information the action is taken on. The map is a display of anatomy already present in the CTA, under mandatory overread.
 
 This package does not argue that incorrect output is harmless. Doc 04 §4 and Doc 09 H1, H5, and H10 assume a wrong display can contribute to serious harm under time pressure. The case against III rests only on what the information is used for.
 
