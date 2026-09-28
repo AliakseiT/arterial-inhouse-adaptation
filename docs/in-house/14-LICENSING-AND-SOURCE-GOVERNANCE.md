@@ -34,7 +34,8 @@ Contact the Arterial research team (via upstream GitHub issues/contact, template
 - (b) confirmation of noncommercial scope for this hospital, mandatory for a privately owned or for-profit hospital;
 - (c) a defect-reporting channel (upstream issues are public, never include PHI, Protected Health Information);
 - (d) back-porting safety fixes without pulling unvalidated features;
-- (e) advance notice before the hospital publishes its own additions, such as validation methods, so safety-relevant findings reach upstream first.
+- (e) advance notice before the hospital publishes its own additions, such as validation methods, so safety-relevant findings reach upstream first;
+- (f) the definition of the difficult-access training label and the training cohort, if the hospital adopts the Doc 16 Phase 2 outline.
 
 Record the outcome in the hospital QMS.
 

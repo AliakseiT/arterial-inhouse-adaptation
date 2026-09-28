@@ -38,6 +38,8 @@ Even the narrow scope is Class IIb-equivalent: stroke is a critical situation an
 
 Widening scope later = new intended purpose = repeat Docs 04-06, 08-10.
 
+The narrow scope is Phase 1 of a phased path. Phase 2, access-difficulty decision support, is where Arterial differs most from CE-marked platforms. Doc 16 outlines it and fixes, in advance, the rule for deciding whether to build it. The decision rests on published evidence plus outcome data gathered while Phase 1 is in use, with the access model run offline on closed cases, never in the clinical build. The open code and weights are what make that evidence obtainable: the hospital can re-run, inspect, and reproduce the model on its own archive. That is an argument for the in-house path. It is not an Article 5(5)(c) ground, and it never overrides a NO-GO where a CE device meets the need (Doc 16 §7).
+
 ## 4. Cost and effort signals (order of magnitude, not a quote)
 
 - Regulatory/QA: 6-12 weeks part-time for Docs 04-08 + declaration, assuming QMS exists.

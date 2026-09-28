@@ -71,7 +71,7 @@ Limits. Adaptation does not excuse any condition. It supports (c), (f), and (g) 
 
 The fork contains more than the defined device, because upstream Arterial ships extra modules: access prediction, tortuosity scoring, vessel labelling names, attention maps. For the initial claim these extras are hidden from the clinical interface by configuration, not removed from the repository. The hospital declares this openly in Docs 03, 06, and 12: what is hidden, where the flag lives, and the release proof test that confirms clinicians cannot reach it.
 
-Uncovering any hidden output for clinical display is a new intended purpose. It requires a Doc 03 revision, fresh non-equivalence analysis, risk and validation updates, and a new declaration before use. Enabling outside this process is not permitted.
+Uncovering any hidden output for clinical display is a new intended purpose. It requires a Doc 03 revision, fresh non-equivalence analysis, risk and validation updates, and a new declaration before use. Enabling outside this process is not permitted. Doc 16 outlines the one expansion the package anticipates, access-difficulty decision support, and the evidence gate in front of it.
 
 ## 4. What (5)(5) does NOT waive
 

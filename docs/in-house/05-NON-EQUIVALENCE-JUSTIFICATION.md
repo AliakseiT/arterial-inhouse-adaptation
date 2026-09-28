@@ -72,6 +72,7 @@ Signers: `[clinical lead + regulatory/QA + date]`.
 - Re-check cadence: `[HOSPITAL: annual minimum]` + trigger on new EUDAMED entries, vendor launches, guideline changes.
 - If an equivalent appears: review and update this justification. A later market entrant does not invalidate the justification made at the start of manufacture, but if a CE-marked device turns out at least equivalent and meets the need at appropriate performance, start a transition to it (MDCG 2023-1 §3.6.3). Record in CAPA/change (Doc 12). The hospital may pause new clinical use during the review; the guidance does not require it.
 - Doc 15 (viability analysis) plays no part in this justification. Economic evidence is inadmissible for (c).
+- A Phase 2 purpose (Doc 16) needs its own search and justification. This one covers the Doc 03 purpose only.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

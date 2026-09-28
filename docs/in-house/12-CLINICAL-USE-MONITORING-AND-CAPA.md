@@ -24,6 +24,7 @@ Relaxed minimum for pathfinder adoption:
 | Clinical-use review | Twice yearly until case volume exceeds `[HOSPITAL: e.g. 100 cases]`, then quarterly | Discordance rate, stratum drift, latency, training compliance | Clinical lead + QA | Review minute; risk-file update decision |
 | Non-equivalence re-check | `12 months` maximum + ad-hoc on new market entrants | European Database on Medical Devices (EUDAMED)/market scan (Doc 05) | Regulatory | Re-affirmation or transition plan |
 | Management review input | per existing hospital QMS cycle, no extra cycle | All above + audit findings | Management | Resource/continue/retire decision |
+| Phase 2 gate review (only if Doc 16 is adopted) | `[HOSPITAL: e.g. annual]` | Doc 16 §4 aggregates, §5 criteria | Clinical lead + regulatory + QA | Proceed / keep collecting / stop |
 
 ## 4. Discordance and incident handling
 

@@ -66,7 +66,7 @@ Record: `[HOSPITAL: classification-equivalent decision, rule and MDCG 2019-11 re
 | If class-equivalent is… | Then… |
 |---|---|
 | IIb-equiv (base case for Doc 03 scope) | Docs 06-12 target this depth. Validation uses a locked test set temporally separated from development data, two-reader ground truth, and a prospective shadow phase (Doc 11). Proceed. |
-| III-equiv (authority reading, or any hidden output shown) | Stop. Either restore the Doc 03 scope or rebuild Docs 05, 09, 10, 11 at III depth: external validation cohort from another site or period, independent readers, prospective clinical-performance evidence, tighter residual-risk bar. Re-sign Doc 01. |
+| III-equiv (authority reading, any hidden output shown, or the Phase 2 purpose in Doc 16) | Stop. Either restore the Doc 03 scope or rebuild Docs 05, 09, 10, 11 at III depth: external validation cohort from another site or period, independent readers, prospective clinical-performance evidence, tighter residual-risk bar. Re-sign Doc 01. |
 | IIa-equiv claimed | Needs a standalone argument that the information only informs and triggers no near-term action. Hard to sustain for use in acute stroke planning. Never use it to reduce validation. |
 | Class I / non-device claimed | Not available: sub-rule 11a covers all MDSW with a medical purpose. Do not use. |
 

@@ -14,6 +14,7 @@ We confirm the following understanding and ask you to correct us where wrong:
 2. We keep all copyright notices, the Required Notice, THIRD_PARTY_NOTICES.md, and the TotalSegmentator Apache-2.0 LICENSE plus NOTICE with every copy.
 3. The device build and weights stay inside our legal entity, as Article 5(5)(a) requires. If we publish our own additions, such as validation methods, we do so on noncommercial terms with your notices, and we tell you beforehand.
 4. We report defects without patient data through this channel: `[HOSPITAL: chosen channel]`. We pull only reviewed safety fixes, never unvalidated upstream changes, into clinical builds.
+5. `[HOSPITAL: include only if adopting Doc 16]` We may evaluate the access prediction module offline on closed local cases, never shown to clinicians. Could you share how the difficult-access training label was defined and on which cohort the model was trained?
 
 Please confirm or correct, and tell us your preferred channel for safety-relevant defect reports.
 

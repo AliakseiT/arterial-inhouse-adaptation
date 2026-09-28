@@ -16,7 +16,7 @@ Narrow in-house purpose adopted here (see [Doc 03](docs/in-house/03-INTENDED-PUR
 
 > In-house CTA vascular visualisation aid: 3D vessel segmentation plus centerline visualisation from head-and-neck CTA, displayed alongside native CTA, to support thrombectomy (mechanical clot removal) planning discussion. The physician decides; the map aids planning, which Doc 04 classes as driving clinical management (IIb-equivalent). Mandatory clinician overread of source CTA. No autonomous triage, no access-probability output to clinicians in this scope.
 
-Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are out of scope for the initial claim. Adding them later is a design change requiring re-validation and re-justification.
+Access prediction, tortuosity scores as decision thresholds, and intracranial-only mode are out of scope for the initial claim. Adding them later is a design change requiring re-validation and re-justification. [Doc 16](docs/in-house/16-PHASE-2-DECISION-SUPPORT-OUTLINE.md) outlines that later step for access prediction as Phase 2, decided on published evidence plus data gathered while Phase 1 is in use.
 
 ## How to read this package
 
@@ -36,6 +36,7 @@ Path 2, build in order. Only after Path 1 ends in GO:
 7. [Doc 09, risk outline](docs/in-house/09-RISK-MANAGEMENT-PLAN-OUTLINE.md), [Doc 10, lifecycle outline](docs/in-house/10-SOFTWARE-LIFECYCLE-PLAN-OUTLINE.md), [Doc 11, validation plus validrig pack](docs/in-house/11-VALIDATION-PLAN-AND-VALIDRIG-PACK-SKELETON.md).
 8. [Doc 12, monitoring](docs/in-house/12-CLINICAL-USE-MONITORING-AND-CAPA.md), [Doc 13, public declaration](docs/in-house/13-PUBLIC-DECLARATION-TEMPLATE-ART-5-5-e.md).
 9. [Doc 14, licensing](docs/in-house/14-LICENSING-AND-SOURCE-GOVERNANCE.md) with [upstream letter](docs/in-house/14A-UPSTREAM-CONTACT-LETTER-TEMPLATE.md), [Doc 15, viability analysis](docs/in-house/15-VIABILITY-ANALYSIS.md) (HEOR, Health Economics and Outcomes Research). Pinned sources live in the [terminology doc](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md#pinned-references).
+10. [Doc 16, Phase 2 outline](docs/in-house/16-PHASE-2-DECISION-SUPPORT-OUTLINE.md), only once Phase 1 is in use: access-difficulty decision support, not claimed, and the evidence gate in front of it.
 
 If in doubt, return here:
 
@@ -55,6 +56,7 @@ If in doubt, return here:
 | How we watch it in use | [Doc 12](docs/in-house/12-CLINICAL-USE-MONITORING-AND-CAPA.md), relaxed cadence plus regulatory minimum |
 | What we publish | [Doc 13](docs/in-house/13-PUBLIC-DECLARATION-TEMPLATE-ART-5-5-e.md), MDCG Annex A based |
 | Can we legally use and share this | [Doc 14](docs/in-house/14-LICENSING-AND-SOURCE-GOVERNANCE.md), licence split plus repo rules |
+| Whether to add access-difficulty decision support later | [Doc 16](docs/in-house/16-PHASE-2-DECISION-SUPPORT-OUTLINE.md), Phase 2 outline, offline outcome study, gate fixed in advance |
 | What it costs and whether it stays worth it | [Doc 15](docs/in-house/15-VIABILITY-ANALYSIS.md), viability bar plus the data that proves it |
 | What an abbreviation means | [Terminology](docs/in-house/00-ABBREVIATIONS-AND-TERMINOLOGY.md) |
 
