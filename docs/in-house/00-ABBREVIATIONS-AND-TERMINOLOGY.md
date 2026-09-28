@@ -60,6 +60,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 | Fork | The hospital-owned copy of upstream code, frozen at one commit plus hospital changes. The fork, not upstream, is the candidate device. |
 | Frozen build | Source commit plus pinned dependencies plus hashed weights plus config, released as one versioned unit. Only frozen builds may reach clinical use. |
 | Overread | The mandatory independent clinician review of the source CTA. Device output is never standalone. Tested under time pressure in validation. |
+| Phase 1 / Phase 2 | Phase 1 is the Doc 03 visualisation aid, the only claimed purpose. Phase 2 is a possible later access-difficulty decision support, outlined but not claimed (Doc 16). |
 | Shadow phase | Prospective validation where the device runs in parallel with care but does not influence decisions. Doc 11 defines it. |
 | validrig | The DearAuditor validation-harness engine. A pack describes one intended use. The engine stays untouched. |
 | HEOR | Health Economics and Outcomes Research. Here only the viability analysis (Doc 15), not a reimbursement dossier. |
@@ -81,7 +82,7 @@ This package is written for a mixed audience. Clinical, engineering, and regulat
 ## Version pins used while drafting
 
 - Upstream Arterial: `v2.1`, Python 3.11, torch 2.6.0 with CUDA 12.4 (Linux GPU), VMTK via conda-forge, model record `22694951`.
-- This package: `v0.3.0-DRAFT`, `2026-09-28`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
+- This package: `v0.4.0-DRAFT`, `2026-09-28`. Hospital to re-verify upstream state at fork time. Upstream moves, the frozen fork does not.
 
 ---
 > Return to the [reading index](../../README.md#how-to-read-this-package).

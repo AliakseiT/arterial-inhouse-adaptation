@@ -40,7 +40,7 @@ The list above is everything the device does. Everything below stays a physician
 - Use outside `[HOSPITAL]` entity, outside adult suspected-AIS planning discussion, or on non-CTA modalities.
 - Paediatric, non-stroke, or non-head-and-neck use.
 
-Upstream modules `access_prediction`, `feature_extraction` quantitative outputs, and `vessel_labelling` names are hidden from the clinical interface by configuration in this scope. The code may remain in the fork for engineering evaluation, but clinicians cannot reach it. Each release proves this with a UI crawl plus a flag-state test, recorded in Doc 07. Uncovering any of it for clinical display follows the wider-use path in Doc 02 section 3: revised purpose, fresh justification, re-validation, new declaration.
+Upstream modules `access_prediction`, `feature_extraction` quantitative outputs, and `vessel_labelling` names are hidden from the clinical interface by configuration in this scope. The code may remain in the fork for engineering evaluation, but clinicians cannot reach it. The clinical build does not run the access model. Evaluating it for a possible Phase 2 happens offline, on closed cases, in a research environment outside the device boundary (Doc 16 §4). Each release proves this with a UI crawl plus a flag-state test, recorded in Doc 07. Uncovering any of it for clinical display follows the wider-use path in Doc 02 section 3: revised purpose, fresh justification, re-validation, new declaration.
 
 ## 5. Users and environment
 
